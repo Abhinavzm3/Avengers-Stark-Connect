@@ -65,7 +65,7 @@ const generateJobEmail = (job) => `
             <p>Best Regards,<br>Stark Connect</p>
         </div>
         <div class="footer">
-            <p>&copy; 2023 Your Job Platform, Inc.</p>
+            <p>&copy; 2024 Stark Connect, Inc.</p>
         </div>
     </div>
 </body>

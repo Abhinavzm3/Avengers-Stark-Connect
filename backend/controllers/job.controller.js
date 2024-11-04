@@ -1,6 +1,69 @@
 
 import { Job } from "../models/job.model.js";
 
+import dotenv from 'dotenv';
+dotenv.config();
+import htmlContentjob from "../models/mail.js";
+
+
+import nodemailer from 'nodemailer';
+
+const transporter = nodemailer.createTransport({
+    service: 'gmail',  
+    auth: {
+        user: process.env.EMAIL_USER,  
+        pass: process.env.EMAIL_PASSWORD  
+    }
+});
+
+
+import { User } from "../models/user.model.js";  
+
+const getUserEmails = async () => {
+    const users = await User.find({}, 'email' ,{role:"student"});  
+    return users.map(user => user.email);  
+};
+
+
+
+const sendJobNotificationEmails = async (job) => {
+    const emails = await getUserEmails();  // Get all user emails
+
+    const mailOptions = {
+        from: process.env.EMAIL_USER,  // Sender address
+        to: emails,  // Send to all users
+        subject: `New Job Posted: ${job.title}`,  // Email subject
+        html:htmlContentjob(job),
+        text: `A new job has been posted:\n\n
+               Job: ${job.title}\n
+               Description: ${job.description}\n
+               Location: ${job.location}\n
+               Requirements: ${job.requirements.join(', ')}\n\n
+               Apply now!`
+
+    };
+
+    await transporter.sendMail(mailOptions);
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // admin post krega job
 export const postJob = async (req, res) => {
     try {
@@ -25,6 +88,9 @@ export const postJob = async (req, res) => {
             company: companyId,
             created_by: userId
         });
+
+        await sendJobNotificationEmails(job);
+
         return res.status(201).json({
             message: "New job created successfully.",
             job,

@@ -61,7 +61,7 @@ const generateJobEmail = (job) => `
             <p><strong>Job Type:</strong> ${job.jobType}</p>
             <p><strong>Experience Level:</strong> ${job.experienceLevel}</p>
             <p><strong>Number of Positions:</strong> ${job.position}</p>
-            <a href="https://your-platform.com/jobs" class="button">Apply Now</a>
+            <a href="#" class="button">Apply Now</a>
             <p>Best Regards,<br>Your Job Platform Team</p>
         </div>
         <div class="footer">

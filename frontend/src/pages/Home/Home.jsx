@@ -5,6 +5,7 @@ import LatestJobs from "../Jobs/LatestJobs";
 import Departments from "./Departments";
 import TestimonialCarousel from "./TestimonialCarousel";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -35,10 +36,11 @@ const Home = () => {
         </p>
         <div className="flex justify-center space-x-4">
           <Button className="px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-black rounded-full font-bold transition duration-300">
-            Sign Up
+           <Link to='/signup'>SignUp</Link>
           </Button>
           <Button className="px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-black rounded-full font-bold transition duration-300">
-            Log In
+          <Link to='/login'>Login</Link>
+
           </Button>
         </div>
       </section>

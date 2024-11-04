@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/button';
 import React from 'react';
 import { FaRobot } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
@@ -20,14 +21,14 @@ const Error = () => {
 
       <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
         <Link to="/">
-          <button className="px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-black rounded-full font-bold transition duration-300">
+          <Button className="px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-black rounded-full font-bold transition duration-300">
             Return Home
-          </button>
+          </Button>
         </Link>
         <Link to="/jobs">
-          <button className="px-6 py-3 bg-gray-700 hover:bg-gray-600 text-white rounded-full font-bold transition duration-300">
+          <Button className="px-6 py-3 bg-gray-700 hover:bg-gray-600 text-white rounded-full font-bold transition duration-300">
             Browse Jobs
-          </button>
+          </Button>
         </Link>
       </div>
     </div>

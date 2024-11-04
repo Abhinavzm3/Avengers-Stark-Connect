@@ -17,8 +17,8 @@ const Cursor = () => {
       style={{
         left: `${position.x}px`,
         top: `${position.y}px`,
-        width: '3.5rem', // Adjust size as needed
-        height: '3.5rem',
+        width: '2.5rem', // Adjust size as needed
+        height: '2.5rem',
         backgroundImage: "url('/images/Cursor.png')",
         backgroundSize: 'cover',
         pointerEvents: 'none',

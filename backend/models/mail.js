@@ -62,7 +62,7 @@ const generateJobEmail = (job) => `
             <p><strong>Experience Level:</strong> ${job.experienceLevel}</p>
             <p><strong>Number of Positions:</strong> ${job.position}</p>
             <a href="#" class="button">Apply Now</a>
-            <p>Best Regards,<br>Your Job Platform Team</p>
+            <p>Best Regards,<br>Stark Connect</p>
         </div>
         <div class="footer">
             <p>&copy; 2023 Your Job Platform, Inc.</p>

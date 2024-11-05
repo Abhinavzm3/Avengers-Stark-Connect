@@ -99,3 +99,42 @@ export const updateCompany = async (req, res) => {
         console.log(error);
     }
 }
+
+
+//delete company
+
+export const deleteCompany =async (req,res)=>{
+const {comId}=req.body
+
+
+    try {
+
+        const com=await Company.findByIdAndDelete(comId)
+
+        if(!com){
+            return res.status(404).send({
+                message:"company not exist",
+                success:false
+
+            })
+        }
+
+        const companies=await Company.find({userId:com.userId})
+
+        return res.status(200).send({
+            message:"company deleted",
+            success:true,
+            data:companies
+        })
+        
+        
+    } catch (error) {
+        console.log("error in company deleting")
+
+        return res.status(500).send({
+            message:"company not deleted",
+            success:false,
+        })
+        
+    }
+}

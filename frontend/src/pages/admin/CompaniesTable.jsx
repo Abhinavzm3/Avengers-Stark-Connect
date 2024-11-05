@@ -13,7 +13,9 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { Edit2, MoreHorizontal } from "lucide-react";
+import { COMPANY_API_END_POINT } from "@/lib/utils/constant";
+import axios from "axios";
+import { Edit2, MoreHorizontal, Trash } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -32,6 +34,30 @@ const CompaniesTable = () => {
       });
       setFilterCompany(filteredCompany);
   },[companies,searchCompanyByText])
+
+
+
+  const deleteCompany =async(comId)=>{
+
+    try {
+
+        const response=await axios.post(`${COMPANY_API_END_POINT}/delete`,{comId:comId},{
+            headers: {
+                'Content-Type':'application/json' 
+            },
+            withCredentials: true
+        })
+
+        setFilterCompany(response.data.data)
+        
+    } catch (error) {
+
+        console.log(error)
+        
+    }
+
+
+  }
   return (
       <div>
           <Table>
@@ -59,9 +85,13 @@ const CompaniesTable = () => {
                                   <Popover>
                                       <PopoverTrigger><MoreHorizontal /></PopoverTrigger>
                                       <PopoverContent className="w-32">
-                                          <div onClick={()=> navigate(`/admin/companies/${company._id}`)} className='flex items-center gap-2 w-fit cursor-pointer'>
+                                          <div onClick={()=> navigate(`/admin/companies/${company._id}`)} className='flex items-center gap-2 w-fit  hover:text-yellow-500   cursor-pointer'>
                                               <Edit2 className='w-4' />
                                               <span>Edit</span>
+                                          </div>
+                                          <div onClick={()=>{deleteCompany(company._id)}} className='flex items-center gap-2 w-fit   hover:text-yellow-500  cursor-pointer'>
+                                              <Trash className='w-4' />
+                                              <span>Delete</span>
                                           </div>
                                       </PopoverContent>
                                   </Popover>

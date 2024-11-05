@@ -167,3 +167,37 @@ export const getAdminJobs = async (req, res) => {
         console.log(error);
     }
 }
+
+
+
+//delete job 
+
+export const deleteJob=async(req,res)=>{
+const {jobId}=req.body
+
+try {
+    
+const job=await Job.findByIdAndDelete(jobId)
+
+if(!job){
+ return   res.status(404).send({
+        message:"job not exist",
+        success:false
+    })
+}
+
+const Jobs=await Job.find({created_by:job.created_by})
+return res.status(200).send({message:"job deleted ",
+    success:true,
+    data:Jobs
+})
+    
+} catch (error) {
+    
+  return  res.status(500).send({
+        message:"unable to delete the job",
+        success:false
+    })
+}
+
+}

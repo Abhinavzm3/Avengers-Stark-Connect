@@ -88,7 +88,7 @@ export const postJob = async (req, res) => {
             company: companyId,
             created_by: userId
         });
-
+// new job posted
         await sendJobNotificationEmails(job);
 
         return res.status(201).json({

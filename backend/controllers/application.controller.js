@@ -1,7 +1,7 @@
 
 import { Application } from "../models/application.model.js";
 import { Job } from "../models/job.model.js";
-
+import {  sendJobNotificationEmails } from "./congratulationsMailSneder.js";
 export const applyJob = async (req, res) => {
     try {
         const userId = req.id;
@@ -118,7 +118,10 @@ export const updateStatus = async (req,res) => {
 
         // update the status
         application.status = status.toLowerCase();
+        await sendJobNotificationEmails(application)
         await application.save();
+
+        // send mail for congratulations wishing to student
 
         return res.status(200).json({
             message:"Status updated successfully.",

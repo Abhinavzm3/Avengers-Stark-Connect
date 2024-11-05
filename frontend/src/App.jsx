@@ -51,11 +51,11 @@ const router = createBrowserRouter([
         element: <Browse />,
       },
       {
-        path: "*",
+        path: "/profile",
         element: <Profile />,
       },
       {
-        path: "/:error",
+        path: "*",
         element: <Error404 />,
       },
 

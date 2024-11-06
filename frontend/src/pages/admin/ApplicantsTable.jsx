@@ -71,7 +71,7 @@ const ApplicantsTable = () => {
                     <PopoverTrigger>
                       <MoreHorizontal />
                     </PopoverTrigger>
-                    <PopoverContent className="w-32">
+                    <PopoverContent className="w-32 ">
                       {shortlistingStatus.map((status, index) => {
                         return (
                           <div
@@ -79,7 +79,7 @@ const ApplicantsTable = () => {
                             key={index}
                             className="flex w-fit items-center my-2 cursor-pointer"
                           >
-                            <span>{status}</span>
+                            <span className=" hover:text-green-500  ">{status}</span>
                           </div>
                         );
                       })}

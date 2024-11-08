@@ -6,6 +6,7 @@ import Departments from "./Departments";
 import TestimonialCarousel from "./TestimonialCarousel";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import Chatbot from "@/components/shared/chatBot";
 
 const Home = () => {
   return (

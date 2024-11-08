@@ -1,0 +1,3553 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ]
+  },
+  "nluManager": {
+    "settings": {},
+    "languages": [
+      "en"
+    ],
+    "intentDomains": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "language": "en",
+          "useNoneFeature": true,
+          "config": {
+            "activation": "leaky-relu",
+            "hiddenLayers": [],
+            "iterations": 20000,
+            "learningRate": 0.7,
+            "errorThresh": 0.00005,
+            "momentum": 0.5,
+            "deltaErrorThresh": 0.000001,
+            "maxDecimals": 9,
+            "leakyReluAlpha": 0.08,
+            "timeout": 120000
+          }
+        },
+        "language": "en",
+        "nluClassName": "BrainNLU",
+        "useMasterDomain": true,
+        "trainByDomain": false,
+        "keepStopwords": true,
+        "stemDict": {
+          "hello": {
+            "domain": "default",
+            "intent": "greeting"
+          },
+          "hi": {
+            "domain": "default",
+            "intent": "greeting"
+          },
+          "hey": {
+            "domain": "default",
+            "intent": "greeting"
+          },
+          "is,up,what": {
+            "domain": "default",
+            "intent": "greeting"
+          },
+          "are,how,you": {
+            "domain": "default",
+            "intent": "greeting"
+          },
+          "good,morn": {
+            "domain": "default",
+            "intent": "greeting"
+          },
+          "even,good": {
+            "domain": "default",
+            "intent": "greeting"
+          },
+          "howdi": {
+            "domain": "default",
+            "intent": "greeting"
+          },
+          "yo": {
+            "domain": "default",
+            "intent": "greeting"
+          },
+          "sup": {
+            "domain": "default",
+            "intent": "greeting"
+          },
+          "hola": {
+            "domain": "default",
+            "intent": "greeting"
+          },
+          "hi,there": {
+            "domain": "default",
+            "intent": "greeting"
+          },
+          "goodby": {
+            "domain": "default",
+            "intent": "farewell"
+          },
+          "later,see,you": {
+            "domain": "default",
+            "intent": "farewell"
+          },
+          "bye": {
+            "domain": "default",
+            "intent": "farewell"
+          },
+          "catch,later,you": {
+            "domain": "default",
+            "intent": "farewell"
+          },
+          "care,take": {
+            "domain": "default",
+            "intent": "farewell"
+          },
+          "see,soon,you": {
+            "domain": "default",
+            "intent": "farewell"
+          },
+          "later,talk,to,you": {
+            "domain": "default",
+            "intent": "farewell"
+          },
+          "i,job,to,view,want": {
+            "domain": "default",
+            "intent": "view_jobs"
+          },
+          "job,me,show": {
+            "domain": "default",
+            "intent": "view_jobs"
+          },
+          "job,view": {
+            "domain": "default",
+            "intent": "view_jobs"
+          },
+          "a,find,job,me": {
+            "domain": "default",
+            "intent": "view_jobs"
+          },
+          "are,avail,job,what": {
+            "domain": "default",
+            "intent": "view_jobs"
+          },
+          "can,job,me,show,you": {
+            "domain": "default",
+            "intent": "view_jobs"
+          },
+          "a,am,for,i,job,look": {
+            "domain": "default",
+            "intent": "view_jobs"
+          },
+          "are,open,posit,what": {
+            "domain": "default",
+            "intent": "view_jobs"
+          },
+          "job,open": {
+            "domain": "default",
+            "intent": "view_jobs"
+          },
+          "avail,me,posit,show": {
+            "domain": "default",
+            "intent": "view_jobs"
+          },
+          "a,appli,do,for,how,i,job": {
+            "domain": "default",
+            "intent": "apply_job"
+          },
+          "a,appli,for,i,job,to,want": {
+            "domain": "default",
+            "intent": "apply_job"
+          },
+          "a,appli,can,for,i,posit": {
+            "domain": "default",
+            "intent": "apply_job"
+          },
+          "an,applic,can,how,i,submit": {
+            "domain": "default",
+            "intent": "apply_job"
+          },
+          "a,appli,can,for,i,job,where": {
+            "domain": "default",
+            "intent": "apply_job"
+          },
+          "i,my,resum,send,to,want": {
+            "domain": "default",
+            "intent": "apply_job"
+          },
+          "appli,for,how,job,this,to": {
+            "domain": "default",
+            "intent": "apply_job"
+          },
+          "appli,can,help,me,you": {
+            "domain": "default",
+            "intent": "apply_job"
+          },
+          "applic,is,my,of,status,the,what": {
+            "domain": "default",
+            "intent": "check_status"
+          },
+          "applic,have,my,review,you": {
+            "domain": "default",
+            "intent": "check_status"
+          },
+          "applic,happen,my,to,what": {
+            "domain": "default",
+            "intent": "check_status"
+          },
+          "applic,can,check,i,my,status": {
+            "domain": "default",
+            "intent": "check_status"
+          },
+          "applic,i,know,my,of,result,the,when,will": {
+            "domain": "default",
+            "intent": "check_status"
+          },
+          "accept,applic,is,my": {
+            "domain": "default",
+            "intent": "check_status"
+          },
+          "applic,been,has,my,review": {
+            "domain": "default",
+            "intent": "check_status"
+          },
+          "an,can,interview,schedul,we": {
+            "domain": "default",
+            "intent": "schedule_interview"
+          },
+          "an,i,interview,schedul,to,want": {
+            "domain": "default",
+            "intent": "schedule_interview"
+          },
+          "an,interview,is,let,set,up": {
+            "domain": "default",
+            "intent": "schedule_interview"
+          },
+          "can,interview,schedul,the,we,when": {
+            "domain": "default",
+            "intent": "schedule_interview"
+          },
+          "a,for,i,interview,schedul,the,time,to,want": {
+            "domain": "default",
+            "intent": "schedule_interview"
+          },
+          "avail,for,interview,know,let,me,re,the,when,you": {
+            "domain": "default",
+            "intent": "schedule_interview"
+          },
+          "applic,feedback,give,job,my,on,pleas": {
+            "domain": "default",
+            "intent": "feedback"
+          },
+          "applic,go,how,is,job,my": {
+            "domain": "default",
+            "intent": "feedback"
+          },
+          "been,consid,for,have,i,role,the": {
+            "domain": "default",
+            "intent": "feedback"
+          },
+          "applic,did,my,of,think,what,you": {
+            "domain": "default",
+            "intent": "feedback"
+          },
+          "about,compani,is,the,what": {
+            "domain": "default",
+            "intent": "company_info"
+          },
+          "about,compani,me,tell,the": {
+            "domain": "default",
+            "intent": "company_info"
+          },
+          "do,do,what,you": {
+            "domain": "default",
+            "intent": "company_info"
+          },
+          "about,is,job,role,the,what": {
+            "domain": "default",
+            "intent": "job_info"
+          },
+          "descript,is,posit,the,what": {
+            "domain": "default",
+            "intent": "job_info"
+          },
+          "about,job,me,more,role,tell,the": {
+            "domain": "default",
+            "intent": "job_info"
+          },
+          "help,i,need": {
+            "domain": "default",
+            "intent": "help"
+          },
+          "assist,can,me,you": {
+            "domain": "default",
+            "intent": "help"
+          },
+          "assist,i,need,some": {
+            "domain": "default",
+            "intent": "help"
+          },
+          "can,guid,me,you": {
+            "domain": "default",
+            "intent": "help"
+          },
+          "do,i,next,should,what": {
+            "domain": "default",
+            "intent": "help"
+          },
+          "thank,you": {
+            "domain": "default",
+            "intent": "thank_you"
+          },
+          "a,lot,thank": {
+            "domain": "default",
+            "intent": "thank_you"
+          },
+          "appreci,i,it": {
+            "domain": "default",
+            "intent": "thank_you"
+          },
+          "for,help,thank,the": {
+            "domain": "default",
+            "intent": "thank_you"
+          },
+          "am,i,sorri": {
+            "domain": "default",
+            "intent": "apology"
+          },
+          "about,sorri,that": {
+            "domain": "default",
+            "intent": "apology"
+          },
+          "did,i,mean,not,that": {
+            "domain": "default",
+            "intent": "apology"
+          },
+          "for,mistak,sorri,the": {
+            "domain": "default",
+            "intent": "apology"
+          },
+          "no": {
+            "domain": "default",
+            "intent": "negative"
+          },
+          "no,thank": {
+            "domain": "default",
+            "intent": "negative"
+          },
+          "do,i,it,not,want": {
+            "domain": "default",
+            "intent": "negative"
+          },
+          "interest,not": {
+            "domain": "default",
+            "intent": "negative"
+          },
+          "yes": {
+            "domain": "default",
+            "intent": "positive"
+          },
+          "sure": {
+            "domain": "default",
+            "intent": "positive"
+          },
+          "definit": {
+            "domain": "default",
+            "intent": "positive"
+          },
+          "i,like,that,would": {
+            "domain": "default",
+            "intent": "positive"
+          },
+          "about,job,me,requir,tell,the": {
+            "domain": "default",
+            "intent": "job_requirements"
+          },
+          "are,for,job,need,qualif,the,what": {
+            "domain": "default",
+            "intent": "job_requirements"
+          },
+          "are,for,requir,role,skill,the,the,what": {
+            "domain": "default",
+            "intent": "job_requirements"
+          },
+          "do,for,how,i,job,meet,qualif,the,this": {
+            "domain": "default",
+            "intent": "job_requirements"
+          },
+          "compani,cultur,is,of,the,the,what": {
+            "domain": "default",
+            "intent": "company_culture"
+          },
+          "about,can,environ,me,tell,the,work,you": {
+            "domain": "default",
+            "intent": "company_culture"
+          },
+          "compani,doe,the,uphold,valu,what": {
+            "domain": "default",
+            "intent": "company_culture"
+          },
+          "about,compani,cultur,me,more,tell,your": {
+            "domain": "default",
+            "intent": "company_culture"
+          }
+        },
+        "intentDict": {
+          "greeting": "default",
+          "farewell": "default",
+          "view_jobs": "default",
+          "apply_job": "default",
+          "check_status": "default",
+          "schedule_interview": "default",
+          "feedback": "default",
+          "company_info": "default",
+          "job_info": "default",
+          "help": "default",
+          "thank_you": "default",
+          "apology": "default",
+          "negative": "default",
+          "positive": "default",
+          "job_requirements": "default",
+          "company_culture": "default"
+        },
+        "useStemDict": true,
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "language": "en",
+              "useNoneFeature": true,
+              "config": {
+                "activation": "leaky-relu",
+                "hiddenLayers": [],
+                "iterations": 20000,
+                "learningRate": 0.7,
+                "errorThresh": 0.00005,
+                "momentum": 0.5,
+                "deltaErrorThresh": 0.000001,
+                "maxDecimals": 9,
+                "leakyReluAlpha": 0.08,
+                "timeout": 120000
+              }
+            },
+            "language": "en",
+            "keepStopwords": true,
+            "docs": [
+              {
+                "intent": "greeting",
+                "tokens": [
+                  "hello"
+                ]
+              },
+              {
+                "intent": "greeting",
+                "tokens": [
+                  "hi"
+                ]
+              },
+              {
+                "intent": "greeting",
+                "tokens": [
+                  "hey"
+                ]
+              },
+              {
+                "intent": "greeting",
+                "tokens": [
+                  "what",
+                  "is",
+                  "up"
+                ]
+              },
+              {
+                "intent": "greeting",
+                "tokens": [
+                  "how",
+                  "are",
+                  "you"
+                ]
+              },
+              {
+                "intent": "greeting",
+                "tokens": [
+                  "good",
+                  "morn"
+                ]
+              },
+              {
+                "intent": "greeting",
+                "tokens": [
+                  "good",
+                  "even"
+                ]
+              },
+              {
+                "intent": "greeting",
+                "tokens": [
+                  "howdi"
+                ]
+              },
+              {
+                "intent": "greeting",
+                "tokens": [
+                  "yo"
+                ]
+              },
+              {
+                "intent": "greeting",
+                "tokens": [
+                  "sup"
+                ]
+              },
+              {
+                "intent": "greeting",
+                "tokens": [
+                  "hola"
+                ]
+              },
+              {
+                "intent": "greeting",
+                "tokens": [
+                  "hi",
+                  "there"
+                ]
+              },
+              {
+                "intent": "farewell",
+                "tokens": [
+                  "goodby"
+                ]
+              },
+              {
+                "intent": "farewell",
+                "tokens": [
+                  "see",
+                  "you",
+                  "later"
+                ]
+              },
+              {
+                "intent": "farewell",
+                "tokens": [
+                  "bye"
+                ]
+              },
+              {
+                "intent": "farewell",
+                "tokens": [
+                  "catch",
+                  "you",
+                  "later"
+                ]
+              },
+              {
+                "intent": "farewell",
+                "tokens": [
+                  "take",
+                  "care"
+                ]
+              },
+              {
+                "intent": "farewell",
+                "tokens": [
+                  "see",
+                  "you",
+                  "soon"
+                ]
+              },
+              {
+                "intent": "farewell",
+                "tokens": [
+                  "talk",
+                  "to",
+                  "you",
+                  "later"
+                ]
+              },
+              {
+                "intent": "view_jobs",
+                "tokens": [
+                  "i",
+                  "want",
+                  "to",
+                  "view",
+                  "job"
+                ]
+              },
+              {
+                "intent": "view_jobs",
+                "tokens": [
+                  "show",
+                  "me",
+                  "job"
+                ]
+              },
+              {
+                "intent": "view_jobs",
+                "tokens": [
+                  "view",
+                  "job"
+                ]
+              },
+              {
+                "intent": "view_jobs",
+                "tokens": [
+                  "find",
+                  "me",
+                  "a",
+                  "job"
+                ]
+              },
+              {
+                "intent": "view_jobs",
+                "tokens": [
+                  "what",
+                  "job",
+                  "are",
+                  "avail"
+                ]
+              },
+              {
+                "intent": "view_jobs",
+                "tokens": [
+                  "can",
+                  "you",
+                  "show",
+                  "me",
+                  "job"
+                ]
+              },
+              {
+                "intent": "view_jobs",
+                "tokens": [
+                  "i",
+                  "am",
+                  "look",
+                  "for",
+                  "a",
+                  "job"
+                ]
+              },
+              {
+                "intent": "view_jobs",
+                "tokens": [
+                  "what",
+                  "posit",
+                  "are",
+                  "open"
+                ]
+              },
+              {
+                "intent": "view_jobs",
+                "tokens": [
+                  "job",
+                  "open"
+                ]
+              },
+              {
+                "intent": "view_jobs",
+                "tokens": [
+                  "show",
+                  "me",
+                  "avail",
+                  "posit"
+                ]
+              },
+              {
+                "intent": "apply_job",
+                "tokens": [
+                  "how",
+                  "do",
+                  "i",
+                  "appli",
+                  "for",
+                  "a",
+                  "job"
+                ]
+              },
+              {
+                "intent": "apply_job",
+                "tokens": [
+                  "i",
+                  "want",
+                  "to",
+                  "appli",
+                  "for",
+                  "a",
+                  "job"
+                ]
+              },
+              {
+                "intent": "apply_job",
+                "tokens": [
+                  "can",
+                  "i",
+                  "appli",
+                  "for",
+                  "a",
+                  "posit"
+                ]
+              },
+              {
+                "intent": "apply_job",
+                "tokens": [
+                  "how",
+                  "can",
+                  "i",
+                  "submit",
+                  "an",
+                  "applic"
+                ]
+              },
+              {
+                "intent": "apply_job",
+                "tokens": [
+                  "where",
+                  "can",
+                  "i",
+                  "appli",
+                  "for",
+                  "a",
+                  "job"
+                ]
+              },
+              {
+                "intent": "apply_job",
+                "tokens": [
+                  "i",
+                  "want",
+                  "to",
+                  "send",
+                  "my",
+                  "resum"
+                ]
+              },
+              {
+                "intent": "apply_job",
+                "tokens": [
+                  "how",
+                  "to",
+                  "appli",
+                  "for",
+                  "this",
+                  "job"
+                ]
+              },
+              {
+                "intent": "apply_job",
+                "tokens": [
+                  "can",
+                  "you",
+                  "help",
+                  "me",
+                  "appli"
+                ]
+              },
+              {
+                "intent": "check_status",
+                "tokens": [
+                  "what",
+                  "is",
+                  "the",
+                  "status",
+                  "of",
+                  "my",
+                  "applic"
+                ]
+              },
+              {
+                "intent": "check_status",
+                "tokens": [
+                  "have",
+                  "you",
+                  "review",
+                  "my",
+                  "applic"
+                ]
+              },
+              {
+                "intent": "check_status",
+                "tokens": [
+                  "what",
+                  "happen",
+                  "to",
+                  "my",
+                  "applic"
+                ]
+              },
+              {
+                "intent": "check_status",
+                "tokens": [
+                  "can",
+                  "i",
+                  "check",
+                  "my",
+                  "applic",
+                  "status"
+                ]
+              },
+              {
+                "intent": "check_status",
+                "tokens": [
+                  "when",
+                  "will",
+                  "i",
+                  "know",
+                  "the",
+                  "result",
+                  "of",
+                  "my",
+                  "applic"
+                ]
+              },
+              {
+                "intent": "check_status",
+                "tokens": [
+                  "is",
+                  "my",
+                  "applic",
+                  "accept"
+                ]
+              },
+              {
+                "intent": "check_status",
+                "tokens": [
+                  "has",
+                  "my",
+                  "applic",
+                  "been",
+                  "review"
+                ]
+              },
+              {
+                "intent": "schedule_interview",
+                "tokens": [
+                  "can",
+                  "we",
+                  "schedul",
+                  "an",
+                  "interview"
+                ]
+              },
+              {
+                "intent": "schedule_interview",
+                "tokens": [
+                  "i",
+                  "want",
+                  "to",
+                  "schedul",
+                  "an",
+                  "interview"
+                ]
+              },
+              {
+                "intent": "schedule_interview",
+                "tokens": [
+                  "let",
+                  "is",
+                  "set",
+                  "up",
+                  "an",
+                  "interview"
+                ]
+              },
+              {
+                "intent": "schedule_interview",
+                "tokens": [
+                  "when",
+                  "can",
+                  "we",
+                  "schedul",
+                  "the",
+                  "interview"
+                ]
+              },
+              {
+                "intent": "schedule_interview",
+                "tokens": [
+                  "i",
+                  "want",
+                  "to",
+                  "schedul",
+                  "a",
+                  "time",
+                  "for",
+                  "the",
+                  "interview"
+                ]
+              },
+              {
+                "intent": "schedule_interview",
+                "tokens": [
+                  "let",
+                  "me",
+                  "know",
+                  "when",
+                  "you",
+                  "re",
+                  "avail",
+                  "for",
+                  "the",
+                  "interview"
+                ]
+              },
+              {
+                "intent": "feedback",
+                "tokens": [
+                  "pleas",
+                  "give",
+                  "feedback",
+                  "on",
+                  "my",
+                  "job",
+                  "applic"
+                ]
+              },
+              {
+                "intent": "feedback",
+                "tokens": [
+                  "how",
+                  "is",
+                  "my",
+                  "job",
+                  "applic",
+                  "go"
+                ]
+              },
+              {
+                "intent": "feedback",
+                "tokens": [
+                  "have",
+                  "i",
+                  "been",
+                  "consid",
+                  "for",
+                  "the",
+                  "role"
+                ]
+              },
+              {
+                "intent": "feedback",
+                "tokens": [
+                  "what",
+                  "did",
+                  "you",
+                  "think",
+                  "of",
+                  "my",
+                  "applic"
+                ]
+              },
+              {
+                "intent": "company_info",
+                "tokens": [
+                  "what",
+                  "is",
+                  "the",
+                  "compani",
+                  "about"
+                ]
+              },
+              {
+                "intent": "company_info",
+                "tokens": [
+                  "tell",
+                  "me",
+                  "about",
+                  "the",
+                  "compani"
+                ]
+              },
+              {
+                "intent": "company_info",
+                "tokens": [
+                  "what",
+                  "do",
+                  "you",
+                  "do"
+                ]
+              },
+              {
+                "intent": "job_info",
+                "tokens": [
+                  "what",
+                  "is",
+                  "the",
+                  "job",
+                  "role",
+                  "about"
+                ]
+              },
+              {
+                "intent": "job_info",
+                "tokens": [
+                  "what",
+                  "is",
+                  "the",
+                  "posit",
+                  "descript"
+                ]
+              },
+              {
+                "intent": "job_info",
+                "tokens": [
+                  "tell",
+                  "me",
+                  "more",
+                  "about",
+                  "the",
+                  "job",
+                  "role"
+                ]
+              },
+              {
+                "intent": "help",
+                "tokens": [
+                  "i",
+                  "need",
+                  "help"
+                ]
+              },
+              {
+                "intent": "help",
+                "tokens": [
+                  "can",
+                  "you",
+                  "assist",
+                  "me"
+                ]
+              },
+              {
+                "intent": "help",
+                "tokens": [
+                  "i",
+                  "need",
+                  "some",
+                  "assist"
+                ]
+              },
+              {
+                "intent": "help",
+                "tokens": [
+                  "can",
+                  "you",
+                  "guid",
+                  "me"
+                ]
+              },
+              {
+                "intent": "help",
+                "tokens": [
+                  "what",
+                  "should",
+                  "i",
+                  "do",
+                  "next"
+                ]
+              },
+              {
+                "intent": "thank_you",
+                "tokens": [
+                  "thank",
+                  "you"
+                ]
+              },
+              {
+                "intent": "thank_you",
+                "tokens": [
+                  "thank",
+                  "a",
+                  "lot"
+                ]
+              },
+              {
+                "intent": "thank_you",
+                "tokens": [
+                  "i",
+                  "appreci",
+                  "it"
+                ]
+              },
+              {
+                "intent": "thank_you",
+                "tokens": [
+                  "thank",
+                  "for",
+                  "the",
+                  "help"
+                ]
+              },
+              {
+                "intent": "apology",
+                "tokens": [
+                  "i",
+                  "am",
+                  "sorri"
+                ]
+              },
+              {
+                "intent": "apology",
+                "tokens": [
+                  "sorri",
+                  "about",
+                  "that"
+                ]
+              },
+              {
+                "intent": "apology",
+                "tokens": [
+                  "i",
+                  "did",
+                  "not",
+                  "mean",
+                  "that"
+                ]
+              },
+              {
+                "intent": "apology",
+                "tokens": [
+                  "sorri",
+                  "for",
+                  "the",
+                  "mistak"
+                ]
+              },
+              {
+                "intent": "negative",
+                "tokens": [
+                  "no"
+                ]
+              },
+              {
+                "intent": "negative",
+                "tokens": [
+                  "no",
+                  "thank"
+                ]
+              },
+              {
+                "intent": "negative",
+                "tokens": [
+                  "i",
+                  "do",
+                  "not",
+                  "want",
+                  "it"
+                ]
+              },
+              {
+                "intent": "negative",
+                "tokens": [
+                  "not",
+                  "interest"
+                ]
+              },
+              {
+                "intent": "positive",
+                "tokens": [
+                  "yes"
+                ]
+              },
+              {
+                "intent": "positive",
+                "tokens": [
+                  "sure"
+                ]
+              },
+              {
+                "intent": "positive",
+                "tokens": [
+                  "definit"
+                ]
+              },
+              {
+                "intent": "positive",
+                "tokens": [
+                  "i",
+                  "would",
+                  "like",
+                  "that"
+                ]
+              },
+              {
+                "intent": "job_requirements",
+                "tokens": [
+                  "tell",
+                  "me",
+                  "about",
+                  "the",
+                  "job",
+                  "requir"
+                ]
+              },
+              {
+                "intent": "job_requirements",
+                "tokens": [
+                  "what",
+                  "qualif",
+                  "are",
+                  "need",
+                  "for",
+                  "the",
+                  "job"
+                ]
+              },
+              {
+                "intent": "job_requirements",
+                "tokens": [
+                  "what",
+                  "are",
+                  "the",
+                  "skill",
+                  "requir",
+                  "for",
+                  "the",
+                  "role"
+                ]
+              },
+              {
+                "intent": "job_requirements",
+                "tokens": [
+                  "how",
+                  "do",
+                  "i",
+                  "meet",
+                  "the",
+                  "qualif",
+                  "for",
+                  "this",
+                  "job"
+                ]
+              },
+              {
+                "intent": "company_culture",
+                "tokens": [
+                  "what",
+                  "is",
+                  "the",
+                  "cultur",
+                  "of",
+                  "the",
+                  "compani"
+                ]
+              },
+              {
+                "intent": "company_culture",
+                "tokens": [
+                  "can",
+                  "you",
+                  "tell",
+                  "me",
+                  "about",
+                  "the",
+                  "work",
+                  "environ"
+                ]
+              },
+              {
+                "intent": "company_culture",
+                "tokens": [
+                  "what",
+                  "valu",
+                  "doe",
+                  "the",
+                  "compani",
+                  "uphold"
+                ]
+              },
+              {
+                "intent": "company_culture",
+                "tokens": [
+                  "tell",
+                  "me",
+                  "more",
+                  "about",
+                  "your",
+                  "compani",
+                  "cultur"
+                ]
+              }
+            ],
+            "features": {
+              "hello": 1,
+              "hi": 2,
+              "hey": 1,
+              "what": 15,
+              "is": 9,
+              "up": 2,
+              "how": 6,
+              "are": 5,
+              "you": 15,
+              "good": 2,
+              "morn": 1,
+              "even": 1,
+              "howdi": 1,
+              "yo": 1,
+              "sup": 1,
+              "hola": 1,
+              "there": 1,
+              "goodby": 1,
+              "see": 2,
+              "later": 3,
+              "bye": 1,
+              "catch": 1,
+              "take": 1,
+              "care": 1,
+              "soon": 1,
+              "talk": 1,
+              "to": 8,
+              "i": 22,
+              "want": 6,
+              "view": 2,
+              "job": 19,
+              "show": 3,
+              "me": 13,
+              "find": 1,
+              "a": 8,
+              "avail": 3,
+              "can": 11,
+              "am": 2,
+              "look": 1,
+              "for": 14,
+              "posit": 4,
+              "open": 2,
+              "do": 6,
+              "appli": 6,
+              "submit": 1,
+              "an": 4,
+              "applic": 11,
+              "where": 1,
+              "send": 1,
+              "my": 11,
+              "resum": 1,
+              "this": 2,
+              "help": 3,
+              "the": 22,
+              "status": 2,
+              "of": 4,
+              "have": 2,
+              "review": 2,
+              "happen": 1,
+              "check": 1,
+              "when": 3,
+              "will": 1,
+              "know": 2,
+              "result": 1,
+              "accept": 1,
+              "has": 1,
+              "been": 2,
+              "we": 2,
+              "schedul": 4,
+              "interview": 6,
+              "let": 2,
+              "set": 1,
+              "time": 1,
+              "re": 1,
+              "pleas": 1,
+              "give": 1,
+              "feedback": 1,
+              "on": 1,
+              "go": 1,
+              "consid": 1,
+              "role": 4,
+              "did": 2,
+              "think": 1,
+              "compani": 5,
+              "about": 8,
+              "tell": 5,
+              "descript": 1,
+              "more": 2,
+              "need": 3,
+              "assist": 2,
+              "some": 1,
+              "guid": 1,
+              "should": 1,
+              "next": 1,
+              "thank": 4,
+              "lot": 1,
+              "appreci": 1,
+              "it": 2,
+              "sorri": 3,
+              "that": 3,
+              "not": 3,
+              "mean": 1,
+              "mistak": 1,
+              "no": 2,
+              "interest": 1,
+              "yes": 1,
+              "sure": 1,
+              "definit": 1,
+              "would": 1,
+              "like": 1,
+              "requir": 2,
+              "qualif": 2,
+              "skill": 1,
+              "meet": 1,
+              "cultur": 2,
+              "work": 1,
+              "environ": 1,
+              "valu": 1,
+              "doe": 1,
+              "uphold": 1,
+              "your": 1
+            },
+            "isEditing": false,
+            "className": "BrainNLU",
+            "classifier": {
+              "className": "BrainClassifier",
+              "settings": {
+                "language": "en",
+                "useNoneFeature": true,
+                "config": {
+                  "activation": "leaky-relu",
+                  "hiddenLayers": [],
+                  "iterations": 20000,
+                  "learningRate": 0.7,
+                  "errorThresh": 0.00005,
+                  "momentum": 0.5,
+                  "deltaErrorThresh": 0.000001,
+                  "maxDecimals": 9,
+                  "leakyReluAlpha": 0.08,
+                  "timeout": 120000
+                }
+              },
+              "labels": [],
+              "network": {
+                "sizes": [
+                  122,
+                  17
+                ],
+                "layers": [
+                  {
+                    "hello": {},
+                    "hi": {},
+                    "hey": {},
+                    "what": {},
+                    "is": {},
+                    "up": {},
+                    "how": {},
+                    "are": {},
+                    "you": {},
+                    "good": {},
+                    "morn": {},
+                    "even": {},
+                    "howdi": {},
+                    "yo": {},
+                    "sup": {},
+                    "hola": {},
+                    "there": {},
+                    "goodby": {},
+                    "see": {},
+                    "later": {},
+                    "bye": {},
+                    "catch": {},
+                    "take": {},
+                    "care": {},
+                    "soon": {},
+                    "talk": {},
+                    "to": {},
+                    "i": {},
+                    "want": {},
+                    "view": {},
+                    "job": {},
+                    "show": {},
+                    "me": {},
+                    "find": {},
+                    "a": {},
+                    "avail": {},
+                    "can": {},
+                    "am": {},
+                    "look": {},
+                    "for": {},
+                    "posit": {},
+                    "open": {},
+                    "do": {},
+                    "appli": {},
+                    "submit": {},
+                    "an": {},
+                    "applic": {},
+                    "where": {},
+                    "send": {},
+                    "my": {},
+                    "resum": {},
+                    "this": {},
+                    "help": {},
+                    "the": {},
+                    "status": {},
+                    "of": {},
+                    "have": {},
+                    "review": {},
+                    "happen": {},
+                    "check": {},
+                    "when": {},
+                    "will": {},
+                    "know": {},
+                    "result": {},
+                    "accept": {},
+                    "has": {},
+                    "been": {},
+                    "we": {},
+                    "schedul": {},
+                    "interview": {},
+                    "let": {},
+                    "set": {},
+                    "time": {},
+                    "re": {},
+                    "pleas": {},
+                    "give": {},
+                    "feedback": {},
+                    "on": {},
+                    "go": {},
+                    "consid": {},
+                    "role": {},
+                    "did": {},
+                    "think": {},
+                    "compani": {},
+                    "about": {},
+                    "tell": {},
+                    "descript": {},
+                    "more": {},
+                    "need": {},
+                    "assist": {},
+                    "some": {},
+                    "guid": {},
+                    "should": {},
+                    "next": {},
+                    "thank": {},
+                    "lot": {},
+                    "appreci": {},
+                    "it": {},
+                    "sorri": {},
+                    "that": {},
+                    "not": {},
+                    "mean": {},
+                    "mistak": {},
+                    "no": {},
+                    "interest": {},
+                    "yes": {},
+                    "sure": {},
+                    "definit": {},
+                    "would": {},
+                    "like": {},
+                    "requir": {},
+                    "qualif": {},
+                    "skill": {},
+                    "meet": {},
+                    "cultur": {},
+                    "work": {},
+                    "environ": {},
+                    "valu": {},
+                    "doe": {},
+                    "uphold": {},
+                    "your": {},
+                    "nonefeature": {}
+                  },
+                  {
+                    "greeting": {
+                      "bias": 4.605574509,
+                      "weights": {
+                        "hello": 7.739664078,
+                        "hi": 7.530371189,
+                        "hey": 7.694644928,
+                        "what": -0.7594046,
+                        "is": 2.123178482,
+                        "up": 6.291448593,
+                        "how": 6.01462841,
+                        "are": 2.929010391,
+                        "you": -1.251032233,
+                        "good": 5.230490685,
+                        "morn": 2.623844624,
+                        "even": 2.606648684,
+                        "howdi": 7.491065025,
+                        "yo": 7.425935745,
+                        "sup": 7.358724594,
+                        "hola": 7.289545059,
+                        "there": 0.366593659,
+                        "goodby": -4.674441814,
+                        "see": -2.556916475,
+                        "later": -2.861892939,
+                        "bye": -4.637609482,
+                        "catch": -1.247100592,
+                        "take": -2.423680782,
+                        "care": -2.423680782,
+                        "soon": -1.341482997,
+                        "talk": -0.399358094,
+                        "to": -1.6385324,
+                        "i": -3.301743507,
+                        "want": -0.499044448,
+                        "view": -1.061554909,
+                        "job": -5.442669392,
+                        "show": -0.671436787,
+                        "me": -1.686328411,
+                        "find": -0.292066902,
+                        "a": -1.367528439,
+                        "avail": -1.700815082,
+                        "can": -1.570452571,
+                        "am": -0.293332517,
+                        "look": -0.10119015,
+                        "for": -1.877240539,
+                        "posit": -3.5662117,
+                        "open": -3.331754923,
+                        "do": -2.685943127,
+                        "appli": -1.118348241,
+                        "submit": -0.537272632,
+                        "an": -3.782788754,
+                        "applic": -3.468622923,
+                        "send": -0.075627074,
+                        "my": -3.006977797,
+                        "resum": -0.075627074,
+                        "this": -0.710776806,
+                        "help": -0.736545801,
+                        "the": -3.042790651,
+                        "status": -0.519487679,
+                        "of": -0.969292641,
+                        "have": -0.128198549,
+                        "review": -0.301812112,
+                        "happen": -0.029353553,
+                        "when": -0.054585684,
+                        "accept": -1.13836062,
+                        "has": -0.197267756,
+                        "been": -0.220921889,
+                        "we": -0.272084564,
+                        "schedul": -0.272084564,
+                        "interview": -3.300101995,
+                        "let": -3.028017521,
+                        "set": -3.028017521,
+                        "go": -0.942339242,
+                        "consid": -0.023654129,
+                        "role": -0.643320322,
+                        "did": -0.039939359,
+                        "compani": -1.514994502,
+                        "about": -2.153179884,
+                        "tell": -0.058572214,
+                        "descript": -0.111656547,
+                        "need": -0.860426188,
+                        "assist": -0.492810935,
+                        "some": -0.35291639,
+                        "guid": -0.339994401,
+                        "should": -0.018909266,
+                        "next": -0.018909266,
+                        "thank": -3.401991844,
+                        "lot": -0.751063943,
+                        "appreci": -0.740983486,
+                        "it": -0.740983486,
+                        "sorri": -1.434206367,
+                        "that": -1.192903757,
+                        "not": -2.363014936,
+                        "mean": -0.039939359,
+                        "mistak": -0.154073939,
+                        "no": -4.467172146,
+                        "interest": -2.323075533,
+                        "yes": -4.371067047,
+                        "sure": -4.321233749,
+                        "definit": -4.270034313,
+                        "would": -0.064974941,
+                        "like": -0.064974941,
+                        "requir": -0.619666159,
+                        "skill": -0.619666159,
+                        "cultur": -0.449805409,
+                        "nonefeature": -4.178971767
+                      }
+                    },
+                    "farewell": {
+                      "bias": 1.631708816,
+                      "weights": {
+                        "hello": -1.545829058,
+                        "hi": -1.550111175,
+                        "hey": -1.51606524,
+                        "what": -2.255287409,
+                        "is": -0.425025851,
+                        "up": -0.239185408,
+                        "how": -1.428153634,
+                        "are": -1.793122649,
+                        "you": 1.642862558,
+                        "good": -1.074039698,
+                        "morn": -0.540262341,
+                        "even": -0.533777177,
+                        "howdi": -1.482667923,
+                        "yo": -1.464582562,
+                        "sup": -1.446213007,
+                        "hola": -1.427585125,
+                        "there": -0.237504974,
+                        "goodby": 10.428429604,
+                        "see": 4.345189095,
+                        "later": 5.486983776,
+                        "bye": 10.442317009,
+                        "catch": 3.610735416,
+                        "take": 5.425507545,
+                        "care": 5.425507545,
+                        "soon": 4.630068302,
+                        "talk": 2.161128044,
+                        "to": 1.508796811,
+                        "i": -1.504093528,
+                        "want": -0.645555139,
+                        "view": -0.661756337,
+                        "job": -2.041530371,
+                        "show": -0.847368002,
+                        "me": -2.265936136,
+                        "find": -0.197962373,
+                        "a": -0.491710424,
+                        "avail": -0.44936195,
+                        "can": -1.781488419,
+                        "am": -0.112019889,
+                        "look": -0.028046943,
+                        "for": -0.540642917,
+                        "posit": -0.393469542,
+                        "open": -0.422738075,
+                        "do": -1.360025644,
+                        "appli": -0.711112082,
+                        "submit": -0.122033037,
+                        "an": -0.49352771,
+                        "applic": -1.388231039,
+                        "send": -0.20302178,
+                        "my": -1.469219923,
+                        "resum": -0.20302178,
+                        "help": -0.720379055,
+                        "the": -0.595388055,
+                        "status": -0.126723766,
+                        "of": -0.357780814,
+                        "have": -0.886226654,
+                        "review": -0.886226654,
+                        "happen": -0.006776567,
+                        "when": -0.256422818,
+                        "know": -0.255202293,
+                        "accept": -0.015414033,
+                        "we": -0.072795302,
+                        "schedul": -0.133529797,
+                        "interview": -0.627917409,
+                        "let": -0.494387746,
+                        "set": -0.239185408,
+                        "re": -0.255202293,
+                        "did": -0.231057063,
+                        "think": -0.231057063,
+                        "compani": -0.04370264,
+                        "about": -0.589169264,
+                        "need": -0.294354945,
+                        "assist": -0.391709924,
+                        "some": -0.196233183,
+                        "guid": -0.147669435,
+                        "thank": -3.20835948,
+                        "lot": -0.176846251,
+                        "appreci": -0.241275728,
+                        "it": -0.241275728,
+                        "sorri": -0.797978401,
+                        "that": -0.545466661,
+                        "not": -0.873478711,
+                        "mistak": -0.168538854,
+                        "no": -1.630898237,
+                        "interest": -0.873478711,
+                        "yes": -1.609812737,
+                        "sure": -1.596518636,
+                        "definit": -1.582096696,
+                        "nonefeature": -1.565831304
+                      }
+                    },
+                    "view_jobs": {
+                      "bias": -0.037000336,
+                      "weights": {
+                        "hello": -0.219873011,
+                        "hi": -0.248449475,
+                        "hey": -0.206770241,
+                        "what": 0.682800472,
+                        "is": -1.834260583,
+                        "up": -0.112624608,
+                        "how": -2.086550474,
+                        "are": 2.442412376,
+                        "you": -0.344351918,
+                        "good": -0.218329817,
+                        "morn": -0.113869272,
+                        "even": -0.104460552,
+                        "howdi": -0.191077933,
+                        "yo": -0.184594825,
+                        "sup": -0.178546548,
+                        "hola": -0.173086509,
+                        "there": -0.064927384,
+                        "goodby": -0.166063517,
+                        "bye": -0.160860464,
+                        "take": -0.108775154,
+                        "care": -0.108775154,
+                        "to": -0.161206737,
+                        "i": -0.158097208,
+                        "want": 0.08616738,
+                        "view": 5.359683037,
+                        "job": 7.308645725,
+                        "show": 4.023409843,
+                        "me": 1.755411386,
+                        "find": 2.330931425,
+                        "a": 1.158367634,
+                        "avail": 2.186953545,
+                        "can": -0.344420046,
+                        "am": 2.344779015,
+                        "look": 4.473734379,
+                        "for": -2.596698046,
+                        "posit": 4.431155682,
+                        "open": 5.072274208,
+                        "do": -1.854863882,
+                        "appli": -5.593287468,
+                        "submit": -0.035684384,
+                        "an": -0.413561434,
+                        "applic": -2.167321205,
+                        "where": -0.375204653,
+                        "send": -0.036951415,
+                        "my": -2.1685884,
+                        "resum": -0.036951415,
+                        "help": -0.464383751,
+                        "the": -5.295278549,
+                        "status": -0.438329011,
+                        "of": -0.438329011,
+                        "have": -0.168616682,
+                        "review": -0.184923396,
+                        "happen": -0.247374192,
+                        "when": -0.327208906,
+                        "know": -0.286376297,
+                        "accept": -0.013394461,
+                        "has": -0.016306717,
+                        "been": -0.016306717,
+                        "we": -0.212495029,
+                        "schedul": -0.30608502,
+                        "interview": -0.705085933,
+                        "let": -0.399000943,
+                        "set": -0.112624608,
+                        "re": -0.286376297,
+                        "pleas": -0.991480887,
+                        "give": -0.991480887,
+                        "feedback": -0.991480887,
+                        "on": -0.991480887,
+                        "go": -0.256135464,
+                        "role": -1.701061606,
+                        "did": -0.055272374,
+                        "compani": -0.451094896,
+                        "about": -2.774809599,
+                        "tell": -1.909529328,
+                        "descript": -0.148496613,
+                        "more": -0.955566108,
+                        "need": -1.668703079,
+                        "assist": -1.01537466,
+                        "some": -0.013552,
+                        "guid": -0.985535443,
+                        "should": -0.04815216,
+                        "next": -0.04815216,
+                        "thank": -0.654336751,
+                        "lot": -0.468678296,
+                        "appreci": -0.22112149,
+                        "it": -0.22112149,
+                        "sorri": -2.128955841,
+                        "that": -0.076640852,
+                        "not": -0.31665346,
+                        "mean": -0.055272374,
+                        "no": -0.484036356,
+                        "interest": -0.26138109,
+                        "yes": -0.345077753,
+                        "sure": -0.331982672,
+                        "definit": -0.320216894,
+                        "would": -0.021368481,
+                        "like": -0.021368481,
+                        "requir": -0.622653365,
+                        "qualif": -1.606434703,
+                        "nonefeature": -0.227430135
+                      }
+                    },
+                    "apply_job": {
+                      "bias": -1.425280249,
+                      "weights": {
+                        "what": -1.128118515,
+                        "is": -1.211489081,
+                        "how": 3.486162663,
+                        "are": -1.240603328,
+                        "you": -0.802781105,
+                        "later": -0.104072861,
+                        "talk": -0.104072861,
+                        "to": 2.024499893,
+                        "i": 0.703666508,
+                        "want": 1.516048074,
+                        "view": -2.01816678,
+                        "job": -0.816144347,
+                        "show": -0.525909007,
+                        "me": 0.451121688,
+                        "find": -0.399433643,
+                        "a": 0.887946963,
+                        "can": 3.159099817,
+                        "am": -1.183752418,
+                        "look": -1.007865667,
+                        "for": 1.025244355,
+                        "posit": -0.371903062,
+                        "do": 0.039861582,
+                        "appli": 8.567217827,
+                        "submit": 4.157752037,
+                        "an": 2.24516511,
+                        "applic": 0.169059768,
+                        "where": 0.390996635,
+                        "send": 4.553296089,
+                        "my": 0.564605951,
+                        "resum": 4.553296089,
+                        "this": -0.34293142,
+                        "help": 2.515149117,
+                        "the": -3.181201935,
+                        "status": -1.990606785,
+                        "of": -0.724865615,
+                        "have": -0.773905993,
+                        "review": -0.430526704,
+                        "happen": -0.480115056,
+                        "check": -1.548816204,
+                        "when": -0.283075005,
+                        "will": -0.283075005,
+                        "know": -0.283075005,
+                        "result": -0.283075005,
+                        "been": -0.343379259,
+                        "we": -0.469002783,
+                        "schedul": -3.164250612,
+                        "interview": -3.164250612,
+                        "time": -1.251664639,
+                        "pleas": -0.034669567,
+                        "give": -0.034669567,
+                        "feedback": -0.034669567,
+                        "on": -0.034669567,
+                        "go": -0.769698501,
+                        "consid": -0.343379259,
+                        "role": -0.403836191,
+                        "did": -0.166692898,
+                        "about": -0.060456935,
+                        "tell": -0.060456935,
+                        "more": -0.060456935,
+                        "need": -1.765590549,
+                        "assist": -1.464218855,
+                        "some": -0.142507061,
+                        "guid": -1.379598975,
+                        "should": -0.178561121,
+                        "next": -0.178561121,
+                        "thank": -0.424174756,
+                        "lot": -0.424174756,
+                        "appreci": -0.254572511,
+                        "it": -0.889306962,
+                        "sorri": -0.175886691,
+                        "that": -0.312290102,
+                        "not": -0.801427364,
+                        "mean": -0.166692898,
+                        "would": -0.14559719,
+                        "like": -0.14559719,
+                        "qualif": -0.80083549,
+                        "meet": -0.80083549,
+                        "nonefeature": 2.82e-7
+                      }
+                    },
+                    "check_status": {
+                      "bias": -0.133331392,
+                      "weights": {
+                        "what": -0.303559721,
+                        "is": 0.690879703,
+                        "up": -0.249899372,
+                        "how": -2.935987711,
+                        "you": -1.494044781,
+                        "later": -0.013001646,
+                        "talk": -0.013001646,
+                        "to": 0.967997551,
+                        "i": -0.742743969,
+                        "want": -1.849859834,
+                        "job": -4.13833952,
+                        "me": -0.327016741,
+                        "a": -0.204198614,
+                        "avail": -0.327016741,
+                        "can": 0.165586263,
+                        "am": -0.014816895,
+                        "for": -1.250925183,
+                        "posit": -0.506781638,
+                        "do": -0.216107026,
+                        "submit": -0.315986931,
+                        "an": -1.276767969,
+                        "applic": 5.007528305,
+                        "send": -1.190776348,
+                        "my": 4.132737637,
+                        "resum": -1.190776348,
+                        "help": -0.031231219,
+                        "the": 0.546916842,
+                        "status": 3.033820152,
+                        "of": -0.47385776,
+                        "have": 1.864394426,
+                        "review": 3.126950026,
+                        "happen": 2.830857992,
+                        "check": 1.039811373,
+                        "when": 0.719333827,
+                        "will": 1.257742524,
+                        "know": 0.930725694,
+                        "result": 1.257742524,
+                        "accept": 2.791438341,
+                        "has": 0.542845905,
+                        "been": -0.176863939,
+                        "we": -0.558238208,
+                        "schedul": -1.217321634,
+                        "interview": -1.703388214,
+                        "let": -0.486066461,
+                        "set": -0.159049705,
+                        "time": -0.204198614,
+                        "re": -0.327016741,
+                        "pleas": -1.518339753,
+                        "give": -1.518339753,
+                        "feedback": -1.518339753,
+                        "on": -1.518339753,
+                        "go": -2.620000362,
+                        "consid": -0.719709814,
+                        "role": -0.719709814,
+                        "did": -3.578953505,
+                        "think": -3.578953505,
+                        "compani": -0.735735774,
+                        "about": -0.571230829,
+                        "descript": -0.506781638,
+                        "need": -0.053344872,
+                        "assist": -0.022113657,
+                        "some": -0.022113657,
+                        "should": -0.056929614,
+                        "next": -0.056929614,
+                        "appreci": -0.018532587,
+                        "it": -0.018532587,
+                        "sorri": -0.014816895,
+                        "that": -0.011117381,
+                        "would": -0.011117381,
+                        "like": -0.011117381,
+                        "cultur": -0.146655679,
+                        "valu": -0.017849233,
+                        "doe": -0.017849233,
+                        "uphold": -0.017849233,
+                        "nonefeature": 2.82e-7
+                      }
+                    },
+                    "schedule_interview": {
+                      "bias": -0.468996954,
+                      "weights": {
+                        "hello": -0.018764326,
+                        "hi": -0.021904211,
+                        "hey": -0.016934074,
+                        "what": -1.0180583,
+                        "is": 0.250585467,
+                        "up": 1.131810069,
+                        "how": -0.667007625,
+                        "you": -0.253601611,
+                        "good": -0.016504688,
+                        "morn": -0.008740854,
+                        "even": -0.007763834,
+                        "howdi": -0.007818438,
+                        "yo": -0.007381479,
+                        "sup": -0.006968941,
+                        "hola": -0.00657946,
+                        "there": -0.004607902,
+                        "goodby": -0.005954218,
+                        "later": -0.260618627,
+                        "bye": -0.005621447,
+                        "take": -0.005307274,
+                        "care": -0.005307274,
+                        "talk": -0.260618627,
+                        "to": 1.060596585,
+                        "i": -0.720567226,
+                        "want": 1.084678173,
+                        "view": -0.397414118,
+                        "job": -1.349979997,
+                        "show": -0.081078134,
+                        "me": -0.024687346,
+                        "a": 0.429517776,
+                        "avail": 0.824557126,
+                        "can": 0.22984758,
+                        "am": -0.102375992,
+                        "for": 0.363326907,
+                        "posit": -0.260153085,
+                        "do": -0.403437853,
+                        "appli": -0.398348242,
+                        "submit": -0.355057895,
+                        "an": 2.491989851,
+                        "applic": -1.123239636,
+                        "send": -0.148971528,
+                        "my": -0.917153418,
+                        "resum": -0.148971528,
+                        "help": -0.379214048,
+                        "the": 0.757385015,
+                        "of": -0.213963941,
+                        "have": -0.647551656,
+                        "when": 1.761433125,
+                        "will": -0.082771741,
+                        "know": 0.822863579,
+                        "result": -0.082771741,
+                        "been": -0.647551656,
+                        "we": 1.169536948,
+                        "schedul": 3.435485125,
+                        "interview": 5.623624802,
+                        "let": 2.188136101,
+                        "set": 1.28250134,
+                        "time": 0.932370186,
+                        "re": 0.905635297,
+                        "pleas": -0.24226816,
+                        "give": -0.24226816,
+                        "feedback": -0.24226816,
+                        "on": -0.24226816,
+                        "go": -0.31194976,
+                        "consid": -0.647551656,
+                        "role": -0.647551656,
+                        "did": -0.205558047,
+                        "think": -0.131192222,
+                        "compani": -0.654813051,
+                        "about": -0.681012571,
+                        "tell": -0.290812999,
+                        "descript": -0.179074958,
+                        "need": -0.366746873,
+                        "assist": -0.451188236,
+                        "some": -0.142180845,
+                        "guid": -0.2494241,
+                        "should": -0.035056263,
+                        "next": -0.035056263,
+                        "thank": -0.319361717,
+                        "lot": -0.104504153,
+                        "appreci": -0.123557553,
+                        "it": -0.360095263,
+                        "sorri": -0.376506448,
+                        "that": -0.092126839,
+                        "not": -0.311719418,
+                        "mean": -0.074365817,
+                        "mistak": -0.274130464,
+                        "no": -0.048548907,
+                        "interest": -0.00081587,
+                        "yes": -0.025900871,
+                        "sure": -0.024579562,
+                        "definit": -0.023325041,
+                        "would": -0.017761024,
+                        "like": -0.017761024,
+                        "work": -0.026199538,
+                        "environ": -0.026199538,
+                        "nonefeature": -0.019786673
+                      }
+                    },
+                    "feedback": {
+                      "bias": -1.800953124,
+                      "weights": {
+                        "what": -0.560101449,
+                        "is": -0.107153617,
+                        "how": 2.439176798,
+                        "are": -0.946543038,
+                        "you": 0.317103565,
+                        "see": -0.029147351,
+                        "later": -0.034887835,
+                        "catch": -0.012258702,
+                        "soon": -0.006760089,
+                        "talk": -0.000241872,
+                        "to": -1.798691154,
+                        "i": -0.263777852,
+                        "want": -0.511986136,
+                        "view": -0.651522279,
+                        "job": 2.316977501,
+                        "show": -0.227038279,
+                        "me": -0.948274076,
+                        "find": -0.02977301,
+                        "a": -1.26439786,
+                        "can": -1.074872732,
+                        "am": -0.693077147,
+                        "look": -0.532137811,
+                        "for": 1.627284288,
+                        "posit": -0.212747663,
+                        "open": -0.525009155,
+                        "do": -1.650751352,
+                        "appli": -1.400690913,
+                        "submit": -0.787089229,
+                        "an": -0.787089229,
+                        "applic": 1.756948471,
+                        "send": -0.371684551,
+                        "my": 2.172353506,
+                        "resum": -0.371684551,
+                        "this": -1.377726912,
+                        "help": -0.482527524,
+                        "the": -1.372566938,
+                        "status": -2.203696012,
+                        "of": 1.935446978,
+                        "have": 1.965966821,
+                        "review": -4.490678787,
+                        "happen": -0.540312171,
+                        "check": -0.092274964,
+                        "when": -0.613321364,
+                        "will": -0.613321364,
+                        "know": -0.613321364,
+                        "result": -0.613321364,
+                        "accept": -1.996887922,
+                        "has": -1.363821387,
+                        "been": 3.729005337,
+                        "pleas": 2.015607595,
+                        "give": 2.015607595,
+                        "feedback": 2.015607595,
+                        "on": 2.015607595,
+                        "go": 5.713137627,
+                        "consid": 5.092824936,
+                        "role": 3.521036863,
+                        "did": 4.01768446,
+                        "think": 4.660190105,
+                        "compani": -0.738479674,
+                        "about": -1.995189786,
+                        "tell": -0.495954126,
+                        "descript": -0.212747663,
+                        "more": -0.269747019,
+                        "need": -0.598215103,
+                        "assist": -0.303584039,
+                        "some": -0.179906636,
+                        "guid": -0.071831189,
+                        "should": -0.062692024,
+                        "next": -0.062692024,
+                        "thank": -0.452904075,
+                        "lot": -0.047946993,
+                        "appreci": -0.218930319,
+                        "it": -0.218930319,
+                        "sorri": -0.368154705,
+                        "that": -0.669761777,
+                        "not": -0.642505705,
+                        "mean": -0.642505705,
+                        "mistak": -0.207215384,
+                        "no": -0.042256121,
+                        "yes": -0.039980691,
+                        "sure": -0.037827611,
+                        "definit": -0.035790309,
+                        "would": -0.027256114,
+                        "like": -0.027256114,
+                        "requir": -0.315078974,
+                        "qualif": -0.788887858,
+                        "skill": -0.315078974,
+                        "meet": -0.631576002,
+                        "nonefeature": 2.82e-7
+                      }
+                    },
+                    "company_info": {
+                      "bias": -1.441599233,
+                      "weights": {
+                        "what": 3.398175478,
+                        "is": -1.008794308,
+                        "up": -1.000351787,
+                        "how": -0.714859843,
+                        "are": -0.714859843,
+                        "you": 2.926147223,
+                        "see": -0.813440979,
+                        "later": -0.884275377,
+                        "catch": -0.540373921,
+                        "soon": -0.588698089,
+                        "talk": -0.119158596,
+                        "to": -0.442586988,
+                        "i": -3.580267668,
+                        "want": -0.723023176,
+                        "job": -4.152234077,
+                        "me": 0.202789992,
+                        "a": -0.016676385,
+                        "avail": -0.285429895,
+                        "can": -3.651849985,
+                        "for": -0.503558218,
+                        "posit": -1.366391659,
+                        "do": 7.196091175,
+                        "applic": -0.61068958,
+                        "my": -0.61068958,
+                        "help": -0.197039083,
+                        "the": 0.589821041,
+                        "of": -3.309806824,
+                        "have": -0.149387389,
+                        "review": -0.149387389,
+                        "happen": -0.323428303,
+                        "when": -0.285429895,
+                        "know": -0.285429895,
+                        "interview": -0.285429895,
+                        "let": -0.285429895,
+                        "re": -0.285429895,
+                        "role": -2.64110446,
+                        "did": -0.137873605,
+                        "think": -0.137873605,
+                        "compani": 6.599415302,
+                        "about": 4.587748051,
+                        "tell": 1.67920351,
+                        "descript": -1.366391659,
+                        "more": -3.482767582,
+                        "need": -0.114246771,
+                        "assist": -0.681703627,
+                        "some": -0.026237154,
+                        "guid": -0.535517275,
+                        "should": -2.742996693,
+                        "next": -2.742996693,
+                        "thank": -1.449293137,
+                        "lot": -0.016676385,
+                        "it": -0.723023176,
+                        "sorri": -1.730436563,
+                        "that": -1.621337771,
+                        "not": -0.727658153,
+                        "mistak": -0.109098911,
+                        "no": -0.043932177,
+                        "interest": -0.004634968,
+                        "yes": -0.027105171,
+                        "sure": -0.025914388,
+                        "definit": -0.024773493,
+                        "requir": -1.511130929,
+                        "cultur": -5.645394325,
+                        "work": -2.460866451,
+                        "environ": -2.460866451,
+                        "valu": -3.050840855,
+                        "doe": -3.050840855,
+                        "uphold": -3.050840855,
+                        "your": -2.473459959,
+                        "nonefeature": 2.82e-7
+                      }
+                    },
+                    "job_info": {
+                      "bias": -1.933939302,
+                      "weights": {
+                        "what": 0.726105094,
+                        "is": 2.436292648,
+                        "up": -1.411421537,
+                        "how": -0.49376598,
+                        "are": -1.916737676,
+                        "you": -0.765021086,
+                        "to": -0.002460639,
+                        "i": -1.312907815,
+                        "want": -0.002460639,
+                        "view": -0.547869563,
+                        "job": 2.503791809,
+                        "show": -0.644555748,
+                        "me": -0.672439873,
+                        "find": -0.012273935,
+                        "a": -0.104466237,
+                        "avail": -0.645939887,
+                        "can": -0.707659662,
+                        "am": -0.010578843,
+                        "for": -2.694433451,
+                        "posit": 3.901215553,
+                        "open": -0.773055315,
+                        "do": -0.349739641,
+                        "an": -0.081040427,
+                        "applic": -1.007440925,
+                        "my": -1.007440925,
+                        "help": -0.592023611,
+                        "the": 2.134889126,
+                        "status": -0.415649325,
+                        "of": -1.577698827,
+                        "have": -0.671253681,
+                        "accept": -0.098025538,
+                        "been": -0.671253681,
+                        "interview": -0.081040427,
+                        "let": -0.081040427,
+                        "set": -0.081040427,
+                        "go": -0.49376598,
+                        "consid": -0.671253681,
+                        "role": 5.825032711,
+                        "compani": -4.106575966,
+                        "about": 0.791173339,
+                        "tell": 0.415269345,
+                        "descript": 5.225902081,
+                        "more": 3.43937397,
+                        "need": -0.885607302,
+                        "assist": -0.332190722,
+                        "some": -0.089510776,
+                        "guid": -0.18819949,
+                        "should": -0.349739641,
+                        "next": -0.349739641,
+                        "thank": -0.591280818,
+                        "lot": -0.092192307,
+                        "appreci": -0.039067276,
+                        "it": -0.039067276,
+                        "sorri": -0.799253225,
+                        "that": -0.415397197,
+                        "not": -0.055645764,
+                        "mistak": -0.373277158,
+                        "no": -0.063169204,
+                        "interest": -0.055645764,
+                        "yes": -0.057013199,
+                        "sure": -0.054048873,
+                        "definit": -0.051237807,
+                        "requir": -3.309701681,
+                        "qualif": -0.645799935,
+                        "skill": -0.562375605,
+                        "cultur": -1.253140211,
+                        "work": -0.276780188,
+                        "environ": -0.276780188,
+                        "valu": -0.116540737,
+                        "doe": -0.116540737,
+                        "uphold": -0.116540737,
+                        "your": -0.091090754,
+                        "nonefeature": 2.82e-7
+                      }
+                    },
+                    "help": {
+                      "bias": -0.317927865,
+                      "weights": {
+                        "hello": -0.066206515,
+                        "hi": -0.07018853,
+                        "hey": -0.060381502,
+                        "what": 0.298884928,
+                        "is": -0.544367611,
+                        "up": -0.4840509,
+                        "how": -1.240426898,
+                        "are": -0.624057651,
+                        "you": -0.102189623,
+                        "good": -0.044556879,
+                        "morn": -0.023486229,
+                        "even": -0.021070652,
+                        "howdi": -0.028212219,
+                        "yo": -0.026873482,
+                        "sup": -0.025596889,
+                        "hola": -0.024379641,
+                        "there": -0.008691333,
+                        "goodby": -0.022827972,
+                        "see": -0.593107343,
+                        "later": -0.730248451,
+                        "bye": -0.014463725,
+                        "catch": -0.292508781,
+                        "take": -0.004550502,
+                        "care": -0.004550502,
+                        "soon": -0.305527747,
+                        "talk": -0.150160253,
+                        "to": -0.401394784,
+                        "i": 3.479706287,
+                        "want": -1.033237457,
+                        "job": -3.223242521,
+                        "show": -2.667499304,
+                        "me": 4.017364502,
+                        "find": -0.11354357,
+                        "a": -0.776060224,
+                        "avail": -0.274113059,
+                        "can": 2.315289259,
+                        "am": -1.468726158,
+                        "for": -1.098115325,
+                        "posit": -0.727859676,
+                        "do": 0.434194505,
+                        "appli": -7.326640129,
+                        "submit": -0.989314616,
+                        "an": -1.212402821,
+                        "applic": -2.017778635,
+                        "send": -0.230988309,
+                        "my": -1.259452701,
+                        "resum": -0.230988309,
+                        "this": -0.031408031,
+                        "help": 2.178780794,
+                        "the": -1.939486742,
+                        "status": -1.028464317,
+                        "of": -0.060316764,
+                        "have": -0.006897721,
+                        "check": -1.028464317,
+                        "been": -0.006897721,
+                        "we": -0.202841848,
+                        "schedul": -0.223087892,
+                        "interview": -0.223087892,
+                        "consid": -0.006897721,
+                        "role": -0.026466269,
+                        "did": -0.492864698,
+                        "compani": -0.22034201,
+                        "about": -1.53793478,
+                        "tell": -1.394826055,
+                        "more": -0.160025254,
+                        "need": 6.356686115,
+                        "assist": 5.947384834,
+                        "some": -2.455381155,
+                        "guid": 6.663359642,
+                        "should": 4.263371468,
+                        "next": 4.263371468,
+                        "thank": -1.202389836,
+                        "lot": -0.208769754,
+                        "appreci": -1.182503343,
+                        "it": -1.964506745,
+                        "sorri": -1.668366194,
+                        "that": -1.473945141,
+                        "not": -1.332696199,
+                        "mean": -0.492864698,
+                        "mistak": -0.056531426,
+                        "no": -0.264269412,
+                        "interest": -0.057828225,
+                        "yes": -0.194029108,
+                        "sure": -0.184853747,
+                        "definit": -0.176102072,
+                        "would": -0.837972462,
+                        "like": -0.837972462,
+                        "requir": -0.319688946,
+                        "qualif": -0.41619274,
+                        "skill": -0.019568549,
+                        "meet": -0.031408031,
+                        "cultur": -0.22034201,
+                        "work": -0.934681118,
+                        "environ": -0.934681118,
+                        "your": -0.160025254,
+                        "nonefeature": -0.069428429
+                      }
+                    },
+                    "thank_you": {
+                      "bias": -0.554434881,
+                      "weights": {
+                        "hello": -0.198972583,
+                        "hi": -0.231622338,
+                        "hey": -0.184811875,
+                        "what": -0.784824014,
+                        "is": -0.136696622,
+                        "how": -1.18030417,
+                        "are": -1.444355011,
+                        "you": 3.308553934,
+                        "good": -0.205061421,
+                        "morn": -0.107267641,
+                        "even": -0.097793795,
+                        "howdi": -0.152726248,
+                        "yo": -0.146956116,
+                        "sup": -0.141378522,
+                        "hola": -0.135988787,
+                        "there": -0.058945954,
+                        "goodby": -0.128748477,
+                        "see": -1.497938514,
+                        "later": -1.661561728,
+                        "bye": -0.108290471,
+                        "catch": -0.973000467,
+                        "take": -0.066226736,
+                        "care": -0.066226736,
+                        "soon": -1.083249569,
+                        "talk": -0.273871899,
+                        "to": -0.71644789,
+                        "i": 0.656534731,
+                        "want": -1.918256521,
+                        "job": -1.228674412,
+                        "me": -1.696022868,
+                        "find": -0.164162681,
+                        "a": 1.309630275,
+                        "avail": -0.436905712,
+                        "can": -1.445014238,
+                        "am": -0.906356096,
+                        "look": -0.471379191,
+                        "for": 0.898504734,
+                        "posit": -0.494851142,
+                        "do": -1.744801521,
+                        "appli": -1.382912397,
+                        "applic": -0.609910727,
+                        "my": -0.609910727,
+                        "this": -0.097722299,
+                        "help": 1.886966705,
+                        "the": 1.341214657,
+                        "of": -0.254497409,
+                        "have": -0.910025537,
+                        "review": -0.492110044,
+                        "when": -0.528292775,
+                        "will": -0.091387115,
+                        "know": -0.528292775,
+                        "result": -0.091387115,
+                        "been": -0.417915314,
+                        "schedul": -0.385846496,
+                        "interview": -0.822752059,
+                        "let": -0.436905712,
+                        "time": -0.385846496,
+                        "re": -0.436905712,
+                        "consid": -0.417915314,
+                        "role": -0.623170435,
+                        "did": -0.372483134,
+                        "think": -0.026413631,
+                        "compani": -0.225239426,
+                        "about": -0.515062332,
+                        "tell": -0.33230859,
+                        "need": -1.953534722,
+                        "thank": 8.849876404,
+                        "lot": 2.95128417,
+                        "appreci": 6.892747402,
+                        "it": 5.417068481,
+                        "sorri": -1.236675501,
+                        "that": -0.695461094,
+                        "not": -1.89212811,
+                        "mean": -0.346069425,
+                        "mistak": -0.618944764,
+                        "no": -7.816421509,
+                        "interest": -0.070377789,
+                        "yes": -0.286847413,
+                        "sure": -0.275528073,
+                        "definit": -0.264612228,
+                        "would": -0.166637912,
+                        "like": -0.166637912,
+                        "requir": -0.350046784,
+                        "qualif": -0.322925955,
+                        "skill": -0.205255225,
+                        "meet": -0.097722299,
+                        "cultur": -0.136696622,
+                        "work": -0.187517047,
+                        "environ": -0.187517047,
+                        "valu": -0.088542804,
+                        "doe": -0.088542804,
+                        "uphold": -0.088542804,
+                        "nonefeature": -0.207803175
+                      }
+                    },
+                    "apology": {
+                      "bias": -0.117726487,
+                      "weights": {
+                        "hello": -0.152268067,
+                        "hi": -0.18277739,
+                        "hey": -0.140649989,
+                        "what": -1.096995831,
+                        "is": -0.322780311,
+                        "up": -0.002028002,
+                        "how": -0.22237584,
+                        "are": -0.49274534,
+                        "you": -0.467400521,
+                        "good": -0.174276426,
+                        "morn": -0.091158517,
+                        "even": -0.083117917,
+                        "howdi": -0.128454924,
+                        "yo": -0.123625711,
+                        "sup": -0.118956007,
+                        "hola": -0.114441991,
+                        "there": -0.052652232,
+                        "goodby": -0.108252458,
+                        "see": -0.009859604,
+                        "later": -0.013141524,
+                        "bye": -0.103851102,
+                        "catch": -0.004035043,
+                        "take": -0.076494813,
+                        "care": -0.076494813,
+                        "soon": -0.002299761,
+                        "talk": -0.001546639,
+                        "to": -0.075095817,
+                        "i": 1.312875509,
+                        "want": -0.916820884,
+                        "job": -1.919516921,
+                        "me": -0.726772845,
+                        "a": -1.309105754,
+                        "can": -0.477895409,
+                        "am": 2.666085005,
+                        "look": -1.019025922,
+                        "for": 0.39866665,
+                        "posit": -0.238709927,
+                        "do": -1.038285851,
+                        "appli": -0.238709927,
+                        "submit": -0.027361499,
+                        "an": -0.051568825,
+                        "applic": -0.440472841,
+                        "my": -0.413111389,
+                        "this": -0.195014343,
+                        "help": -0.431728661,
+                        "the": 0.54739368,
+                        "status": -0.01881296,
+                        "of": -0.44572705,
+                        "have": -0.481542706,
+                        "review": -0.002671948,
+                        "check": -0.01881296,
+                        "when": -0.132678241,
+                        "will": -0.132678241,
+                        "know": -0.132678241,
+                        "result": -0.132678241,
+                        "has": -0.002671948,
+                        "been": -0.484214634,
+                        "schedul": -0.073549174,
+                        "interview": -0.075577177,
+                        "let": -0.002028002,
+                        "set": -0.002028002,
+                        "time": -0.051369857,
+                        "consid": -0.481542706,
+                        "role": -0.689439654,
+                        "did": 3.241876125,
+                        "think": -0.258948237,
+                        "compani": -0.45843631,
+                        "about": 0.873217106,
+                        "tell": -0.726772845,
+                        "more": -0.095745444,
+                        "need": -0.754504502,
+                        "assist": -0.218034029,
+                        "some": -0.218034029,
+                        "thank": -0.455751956,
+                        "appreci": -0.167864233,
+                        "it": -1.011135936,
+                        "sorri": 8.608932495,
+                        "that": 3.161895514,
+                        "not": 1.392021775,
+                        "mean": 3.500824451,
+                        "mistak": 3.05718112,
+                        "no": -0.642162204,
+                        "interest": -1.265532374,
+                        "yes": -0.333369255,
+                        "sure": -0.318897843,
+                        "definit": -0.305023521,
+                        "would": -2.205572605,
+                        "like": -2.205572605,
+                        "requir": -0.628525078,
+                        "qualif": -0.47986272,
+                        "skill": -0.207896948,
+                        "meet": -0.195014343,
+                        "cultur": -0.149846077,
+                        "work": -0.193011031,
+                        "environ": -0.193011031,
+                        "valu": -0.02455019,
+                        "doe": -0.02455019,
+                        "uphold": -0.02455019,
+                        "your": -0.095745444,
+                        "nonefeature": -0.158959523
+                      }
+                    },
+                    "negative": {
+                      "bias": 0.651335781,
+                      "weights": {
+                        "hello": -0.640026391,
+                        "hi": -0.645353496,
+                        "hey": -0.633051574,
+                        "what": -1.131873965,
+                        "is": -0.156859919,
+                        "up": -0.106288679,
+                        "how": -0.43495515,
+                        "are": -0.269965172,
+                        "you": -2.083155394,
+                        "good": -0.482385427,
+                        "morn": -0.250513405,
+                        "even": -0.231871963,
+                        "howdi": -0.62615329,
+                        "yo": -0.62116605,
+                        "sup": -0.615981579,
+                        "hola": -0.610609591,
+                        "there": -0.139494762,
+                        "goodby": -0.604532421,
+                        "see": -0.115702949,
+                        "later": -0.149035543,
+                        "bye": -0.598504663,
+                        "catch": -0.054689348,
+                        "take": -0.31499669,
+                        "care": -0.31499669,
+                        "soon": -0.042231183,
+                        "talk": -0.02087442,
+                        "to": -0.992802143,
+                        "i": -1.751804113,
+                        "want": 2.396188259,
+                        "view": -0.314196825,
+                        "job": -1.018316627,
+                        "show": -0.090584256,
+                        "me": -0.355006963,
+                        "a": -1.174968958,
+                        "avail": -0.090584256,
+                        "can": -0.112248465,
+                        "for": -0.917426646,
+                        "posit": -0.098348849,
+                        "do": 2.295717001,
+                        "appli": -0.087439775,
+                        "submit": -0.042285159,
+                        "an": -0.33287406,
+                        "applic": -0.124761999,
+                        "send": -0.337411582,
+                        "my": -0.419888228,
+                        "resum": -0.337411582,
+                        "this": -0.314978987,
+                        "help": -0.311840802,
+                        "the": -1.074784875,
+                        "status": -0.052331045,
+                        "of": -0.05057124,
+                        "review": -0.030145824,
+                        "check": -0.052331045,
+                        "has": -0.030145824,
+                        "been": -0.030145824,
+                        "we": -0.009867666,
+                        "schedul": -0.290588886,
+                        "interview": -0.290588886,
+                        "role": -0.091792382,
+                        "did": -1.73494935,
+                        "compani": -0.171407253,
+                        "about": -0.264422953,
+                        "tell": -0.264422953,
+                        "more": -0.095516071,
+                        "need": -0.192292228,
+                        "assist": -0.022549441,
+                        "some": -0.022549441,
+                        "should": -0.332258254,
+                        "next": -0.332258254,
+                        "thank": 0.93320179,
+                        "lot": -1.087529302,
+                        "appreci": -1.174595118,
+                        "it": 2.193520308,
+                        "that": -2.131966591,
+                        "not": 6.724560738,
+                        "mean": -1.73494935,
+                        "no": 11.239461899,
+                        "interest": 5.091393471,
+                        "yes": -0.666504562,
+                        "sure": -0.658010423,
+                        "definit": -0.651664913,
+                        "would": -0.397018015,
+                        "like": -0.397018015,
+                        "requir": -0.260699242,
+                        "qualif": -0.455537856,
+                        "skill": -0.091792382,
+                        "meet": -0.314978987,
+                        "cultur": -0.146087319,
+                        "valu": -0.025319943,
+                        "doe": -0.025319943,
+                        "uphold": -0.025319943,
+                        "your": -0.095516071,
+                        "nonefeature": -0.644391775
+                      }
+                    },
+                    "positive": {
+                      "bias": 1.852485484,
+                      "weights": {
+                        "hello": -1.802139163,
+                        "hi": -1.810045123,
+                        "hey": -1.773739934,
+                        "what": -1.044945836,
+                        "is": -0.564445913,
+                        "up": -0.40244779,
+                        "how": -0.560368955,
+                        "are": -0.511024296,
+                        "you": -1.063733697,
+                        "good": -1.251440406,
+                        "morn": -0.63534683,
+                        "even": -0.616093695,
+                        "howdi": -1.748524547,
+                        "yo": -1.730555654,
+                        "sup": -1.712131619,
+                        "hola": -1.693284273,
+                        "there": -0.309950143,
+                        "goodby": -1.672729373,
+                        "see": -0.455331802,
+                        "later": -0.471797764,
+                        "bye": -1.652281046,
+                        "catch": -0.259345829,
+                        "take": -0.885432899,
+                        "care": -0.885432899,
+                        "soon": -0.269408941,
+                        "talk": -0.026529081,
+                        "to": -0.480364203,
+                        "i": -0.042532604,
+                        "want": -0.45383516,
+                        "view": -0.380756021,
+                        "job": -1.409920335,
+                        "show": -0.31692028,
+                        "me": -0.701797307,
+                        "a": -0.612206221,
+                        "avail": -0.31692028,
+                        "can": -0.628340781,
+                        "am": -0.290948182,
+                        "look": -0.041376956,
+                        "for": -0.693818986,
+                        "posit": -0.451570511,
+                        "open": -0.366308779,
+                        "do": -0.370350718,
+                        "appli": -0.134650245,
+                        "submit": -0.156385854,
+                        "an": -0.454255223,
+                        "applic": -0.573941946,
+                        "send": -0.184377283,
+                        "my": -0.60193336,
+                        "resum": -0.184377283,
+                        "this": -0.205375358,
+                        "help": -0.616466761,
+                        "the": -0.973966002,
+                        "status": -0.161798388,
+                        "of": -0.111282572,
+                        "review": -0.205042258,
+                        "check": -0.161798388,
+                        "accept": -0.050715685,
+                        "has": -0.205042258,
+                        "been": -0.205042258,
+                        "we": -0.148018107,
+                        "schedul": -0.261400402,
+                        "interview": -0.297869414,
+                        "let": -0.036468994,
+                        "set": -0.036468994,
+                        "role": -0.123422839,
+                        "did": -1.092908978,
+                        "compani": -0.331854075,
+                        "about": -1.863261104,
+                        "tell": -0.384877473,
+                        "more": -0.130278692,
+                        "need": -1.12046814,
+                        "assist": -0.315008014,
+                        "some": -0.315008014,
+                        "should": -0.164975584,
+                        "next": -0.164975584,
+                        "thank": -0.728405237,
+                        "lot": -0.43617931,
+                        "appreci": -0.860818744,
+                        "it": -0.860818744,
+                        "sorri": -1.727954984,
+                        "that": 1.839344978,
+                        "not": -1.411806107,
+                        "mean": -1.092908978,
+                        "no": -1.583383679,
+                        "interest": -0.3188968,
+                        "yes": 10.296736717,
+                        "sure": 10.273574829,
+                        "definit": 10.183824539,
+                        "would": 4.410635471,
+                        "like": 4.410635471,
+                        "requir": -0.35053286,
+                        "qualif": -0.394369006,
+                        "skill": -0.123422839,
+                        "meet": -0.205375358,
+                        "cultur": -0.241561279,
+                        "work": -0.027488742,
+                        "environ": -0.027488742,
+                        "valu": -0.090292811,
+                        "doe": -0.090292811,
+                        "uphold": -0.090292811,
+                        "your": -0.130278692,
+                        "nonefeature": -1.819491506
+                      }
+                    },
+                    "job_requirements": {
+                      "bias": -2.080868514,
+                      "weights": {
+                        "hello": -0.080680527,
+                        "hi": -0.096840002,
+                        "hey": -0.071914352,
+                        "what": 0.027938858,
+                        "is": -1.893751979,
+                        "up": -0.154631957,
+                        "how": 0.089307122,
+                        "are": 2.001891851,
+                        "you": -1.489230275,
+                        "good": -0.077516817,
+                        "morn": -0.041052774,
+                        "even": -0.036464043,
+                        "howdi": -0.036720492,
+                        "yo": -0.034668252,
+                        "sup": -0.032730706,
+                        "hola": -0.030901443,
+                        "there": -0.020668561,
+                        "goodby": -0.028019289,
+                        "bye": -0.02645334,
+                        "take": -0.024974909,
+                        "care": -0.024974909,
+                        "to": -1.269092321,
+                        "i": -0.522948325,
+                        "want": -0.444902986,
+                        "view": -0.542598069,
+                        "job": 1.891390204,
+                        "show": -0.409303844,
+                        "me": 0.565534115,
+                        "find": -0.113937341,
+                        "a": -1.437180758,
+                        "avail": -1.839879751,
+                        "can": -0.865577579,
+                        "am": -0.61307478,
+                        "look": -0.61307478,
+                        "for": 1.571913362,
+                        "posit": -0.489972562,
+                        "open": -0.489972562,
+                        "do": 1.458686352,
+                        "appli": -1.440895796,
+                        "applic": -0.122189805,
+                        "my": -0.122189805,
+                        "this": 1.238593578,
+                        "help": -0.967394888,
+                        "the": 2.428610802,
+                        "status": -0.122189805,
+                        "of": -0.793074071,
+                        "have": -0.923657119,
+                        "when": -0.293531418,
+                        "know": -0.185996726,
+                        "been": -0.923657119,
+                        "we": -0.107534692,
+                        "schedul": -0.200997069,
+                        "interview": -0.386993825,
+                        "let": -0.185996726,
+                        "time": -0.09346237,
+                        "re": -0.185996726,
+                        "consid": -0.923657119,
+                        "role": -1.916450143,
+                        "compani": -2.511780024,
+                        "about": 0.328726351,
+                        "tell": 1.274771929,
+                        "more": -2.468250513,
+                        "need": 2.300026178,
+                        "thank": -0.967394888,
+                        "sorri": -0.957325757,
+                        "mistak": -0.957325757,
+                        "requir": 8.076889038,
+                        "qualif": 4.362808228,
+                        "skill": 2.390911818,
+                        "meet": 2.062782288,
+                        "cultur": -0.670884192,
+                        "work": -0.758042991,
+                        "environ": -0.758042991,
+                        "valu": -0.625391722,
+                        "doe": -0.625391722,
+                        "uphold": -0.625391722,
+                        "nonefeature": -0.085546628
+                      }
+                    },
+                    "company_culture": {
+                      "bias": -1.506112252,
+                      "weights": {
+                        "hello": -0.185495213,
+                        "hi": -0.24240014,
+                        "hey": -0.165340587,
+                        "what": 1.392622352,
+                        "is": -0.699055076,
+                        "up": -0.3686845,
+                        "how": -0.345823556,
+                        "are": -0.491789609,
+                        "you": 0.775830686,
+                        "good": -0.230703205,
+                        "morn": -0.122180022,
+                        "even": -0.108523168,
+                        "howdi": -0.109286435,
+                        "yo": -0.103178605,
+                        "sup": -0.097412139,
+                        "hola": -0.091967948,
+                        "there": -0.067271918,
+                        "goodby": -0.083068304,
+                        "see": -0.320471019,
+                        "later": -0.440253198,
+                        "bye": -0.067209929,
+                        "catch": -0.152016759,
+                        "take": -0.05495774,
+                        "care": -0.05495774,
+                        "soon": -0.119787633,
+                        "talk": -0.087553032,
+                        "to": -0.159166232,
+                        "i": -0.409882098,
+                        "want": -0.0716132,
+                        "view": -0.03635285,
+                        "job": -1.831803083,
+                        "show": -0.853169024,
+                        "me": -1.090653896,
+                        "find": -0.21712701,
+                        "a": -0.319207698,
+                        "avail": -0.35317409,
+                        "can": 2.395461082,
+                        "for": -0.389360815,
+                        "posit": -0.299828053,
+                        "open": -0.152159154,
+                        "do": -0.637006879,
+                        "appli": -0.853841722,
+                        "submit": -0.052949157,
+                        "an": -0.060235932,
+                        "applic": -1.508139491,
+                        "my": -1.455190301,
+                        "help": -0.787940681,
+                        "the": 1.050483584,
+                        "status": -0.849926591,
+                        "of": 3.0928545,
+                        "have": -0.062630035,
+                        "when": -0.798720181,
+                        "will": -0.156788737,
+                        "know": -0.381438792,
+                        "result": -0.156788737,
+                        "been": -0.062630035,
+                        "we": -0.424568117,
+                        "schedul": -0.460747868,
+                        "interview": -0.685397923,
+                        "let": -0.22465007,
+                        "time": -0.036179762,
+                        "re": -0.22465007,
+                        "consid": -0.062630035,
+                        "role": -0.802279294,
+                        "did": -0.448475063,
+                        "think": -0.448475063,
+                        "compani": 1.431496143,
+                        "about": -1.912720442,
+                        "tell": 2.115768194,
+                        "more": 2.473809719,
+                        "assist": -0.578202605,
+                        "guid": -0.54533422,
+                        "requir": -0.020516817,
+                        "cultur": 7.761507034,
+                        "work": 5.340068817,
+                        "environ": 5.340068817,
+                        "valu": 3.376074076,
+                        "doe": 3.376074076,
+                        "uphold": 3.376074076,
+                        "your": 3.213458776,
+                        "nonefeature": -0.19668366
+                      }
+                    },
+                    "None": {
+                      "bias": 0.597421653,
+                      "weights": {
+                        "hello": -0.586683631,
+                        "hi": -0.59002018,
+                        "hey": -0.577548027,
+                        "what": -0.237658635,
+                        "is": -0.22812444,
+                        "up": -0.189885616,
+                        "how": -0.151367158,
+                        "are": -0.157517135,
+                        "you": -0.368845791,
+                        "good": -0.4137595,
+                        "morn": -0.210916415,
+                        "even": -0.202843145,
+                        "howdi": -0.568432093,
+                        "yo": -0.562503874,
+                        "sup": -0.55642134,
+                        "hola": -0.550195634,
+                        "there": -0.102110364,
+                        "goodby": -0.543368697,
+                        "see": -0.133215919,
+                        "later": -0.140498176,
+                        "bye": -0.536614597,
+                        "catch": -0.072921522,
+                        "take": -0.28766194,
+                        "care": -0.28766194,
+                        "soon": -0.0780387,
+                        "talk": -0.012399481,
+                        "to": -0.059737168,
+                        "i": -0.365692377,
+                        "want": -0.041713461,
+                        "view": -0.172937438,
+                        "job": -0.407846928,
+                        "show": -0.144514918,
+                        "me": -0.211960852,
+                        "find": -0.022264279,
+                        "a": -0.189615086,
+                        "avail": -0.100111663,
+                        "can": -0.141508698,
+                        "am": -0.031432804,
+                        "look": -0.010005613,
+                        "for": -0.114225917,
+                        "posit": -0.123950854,
+                        "open": -0.16908668,
+                        "do": -0.000017869,
+                        "appli": -0.011827686,
+                        "submit": -0.008183893,
+                        "an": -0.102319025,
+                        "applic": -0.1556582,
+                        "send": -0.013155757,
+                        "my": -0.160630077,
+                        "resum": -0.013155757,
+                        "help": -0.094822749,
+                        "the": -0.175804213,
+                        "status": -0.011721672,
+                        "of": -0.009308886,
+                        "have": -0.009929319,
+                        "review": -0.08719486,
+                        "happen": -0.005624242,
+                        "check": -0.009414563,
+                        "when": -0.024949225,
+                        "will": -0.007001775,
+                        "know": -0.007001775,
+                        "result": -0.007001775,
+                        "accept": -0.035931785,
+                        "has": -0.08484666,
+                        "been": -0.09242779,
+                        "we": -0.112082578,
+                        "schedul": -0.112082578,
+                        "interview": -0.112082578,
+                        "consid": -0.007581125,
+                        "role": -0.007581125,
+                        "did": -0.00593411,
+                        "compani": -0.070671618,
+                        "about": -0.189309672,
+                        "tell": -0.045181572,
+                        "more": -0.014516303,
+                        "need": -0.121174961,
+                        "assist": -0.048911106,
+                        "some": -0.048911106,
+                        "should": -0.000017869,
+                        "next": -0.000017869,
+                        "thank": -0.242599964,
+                        "lot": -0.145517513,
+                        "appreci": -0.107182667,
+                        "it": -0.107182667,
+                        "sorri": -0.227807909,
+                        "that": -0.164289907,
+                        "not": -0.285110563,
+                        "mean": -0.00593411,
+                        "mistak": -0.062252626,
+                        "no": -0.521939874,
+                        "interest": -0.279176474,
+                        "yes": -0.505364239,
+                        "sure": -0.497692585,
+                        "definit": -0.489901066,
+                        "would": -0.014227693,
+                        "like": -0.014227693,
+                        "cultur": -0.014516303,
+                        "valu": -0.025490049,
+                        "doe": -0.025490049,
+                        "uphold": -0.025490049,
+                        "your": -0.014516303,
+                        "nonefeature": 11.318822861
+                      }
+                    }
+                  }
+                ],
+                "trainOpts": {
+                  "iterations": 20000,
+                  "errorThresh": 0.00005,
+                  "fixedError": false,
+                  "deltaErrorThresh": 0.000001,
+                  "learningRate": 0.7,
+                  "momentum": 0.5,
+                  "leakyReluAlpha": 0.08,
+                  "maxDecimals": 9,
+                  "log": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "extraSentences": [
+      [
+        "en",
+        "Hello"
+      ],
+      [
+        "en",
+        "Hi"
+      ],
+      [
+        "en",
+        "Hey"
+      ],
+      [
+        "en",
+        "What's up?"
+      ],
+      [
+        "en",
+        "How are you?"
+      ],
+      [
+        "en",
+        "Good morning"
+      ],
+      [
+        "en",
+        "Good evening"
+      ],
+      [
+        "en",
+        "Howdy"
+      ],
+      [
+        "en",
+        "Yo"
+      ],
+      [
+        "en",
+        "Sup"
+      ],
+      [
+        "en",
+        "Hola"
+      ],
+      [
+        "en",
+        "Hi there"
+      ],
+      [
+        "en",
+        "Goodbye"
+      ],
+      [
+        "en",
+        "See you later"
+      ],
+      [
+        "en",
+        "Bye"
+      ],
+      [
+        "en",
+        "Catch you later"
+      ],
+      [
+        "en",
+        "Take care"
+      ],
+      [
+        "en",
+        "See you soon"
+      ],
+      [
+        "en",
+        "Talk to you later"
+      ],
+      [
+        "en",
+        "I want to view jobs"
+      ],
+      [
+        "en",
+        "Show me jobs"
+      ],
+      [
+        "en",
+        "View job"
+      ],
+      [
+        "en",
+        "View jobs"
+      ],
+      [
+        "en",
+        "Find me a job"
+      ],
+      [
+        "en",
+        "What jobs are available?"
+      ],
+      [
+        "en",
+        "Can you show me jobs?"
+      ],
+      [
+        "en",
+        "I'm looking for a job"
+      ],
+      [
+        "en",
+        "What positions are open?"
+      ],
+      [
+        "en",
+        "Job openings"
+      ],
+      [
+        "en",
+        "Show me available positions"
+      ],
+      [
+        "en",
+        "How do I apply for a job?"
+      ],
+      [
+        "en",
+        "I want to apply for a job"
+      ],
+      [
+        "en",
+        "Can I apply for a position?"
+      ],
+      [
+        "en",
+        "How can I submit an application?"
+      ],
+      [
+        "en",
+        "Where can I apply for a job?"
+      ],
+      [
+        "en",
+        "I want to send my resume"
+      ],
+      [
+        "en",
+        "How to apply for this job?"
+      ],
+      [
+        "en",
+        "Can you help me apply?"
+      ],
+      [
+        "en",
+        "What is the status of my application?"
+      ],
+      [
+        "en",
+        "Have you reviewed my application?"
+      ],
+      [
+        "en",
+        "What happened to my application?"
+      ],
+      [
+        "en",
+        "Can I check my application status?"
+      ],
+      [
+        "en",
+        "When will I know the result of my application?"
+      ],
+      [
+        "en",
+        "Is my application accepted?"
+      ],
+      [
+        "en",
+        "Has my application been reviewed?"
+      ],
+      [
+        "en",
+        "Can we schedule an interview?"
+      ],
+      [
+        "en",
+        "I want to schedule an interview"
+      ],
+      [
+        "en",
+        "Let's set up an interview"
+      ],
+      [
+        "en",
+        "When can we schedule the interview?"
+      ],
+      [
+        "en",
+        "I want to schedule a time for the interview"
+      ],
+      [
+        "en",
+        "Let me know when you’re available for the interview"
+      ],
+      [
+        "en",
+        "Please give feedback on my job application"
+      ],
+      [
+        "en",
+        "How is my job application going?"
+      ],
+      [
+        "en",
+        "Have I been considered for the role?"
+      ],
+      [
+        "en",
+        "What did you think of my application?"
+      ],
+      [
+        "en",
+        "What is the company about?"
+      ],
+      [
+        "en",
+        "Tell me about the company"
+      ],
+      [
+        "en",
+        "What do you do?"
+      ],
+      [
+        "en",
+        "What is the job role about?"
+      ],
+      [
+        "en",
+        "What is the position description?"
+      ],
+      [
+        "en",
+        "Tell me more about the job role"
+      ],
+      [
+        "en",
+        "I need help"
+      ],
+      [
+        "en",
+        "Can you assist me?"
+      ],
+      [
+        "en",
+        "I need some assistance"
+      ],
+      [
+        "en",
+        "Can you guide me?"
+      ],
+      [
+        "en",
+        "What should I do next?"
+      ],
+      [
+        "en",
+        "Thank you"
+      ],
+      [
+        "en",
+        "Thanks a lot"
+      ],
+      [
+        "en",
+        "I appreciate it"
+      ],
+      [
+        "en",
+        "Thanks for the help"
+      ],
+      [
+        "en",
+        "I am sorry"
+      ],
+      [
+        "en",
+        "Sorry about that"
+      ],
+      [
+        "en",
+        "I didn't mean that"
+      ],
+      [
+        "en",
+        "Sorry for the mistake"
+      ],
+      [
+        "en",
+        "No"
+      ],
+      [
+        "en",
+        "No thanks"
+      ],
+      [
+        "en",
+        "I don't want it"
+      ],
+      [
+        "en",
+        "Not interested"
+      ],
+      [
+        "en",
+        "Yes"
+      ],
+      [
+        "en",
+        "Sure"
+      ],
+      [
+        "en",
+        "Definitely"
+      ],
+      [
+        "en",
+        "I would like that"
+      ],
+      [
+        "en",
+        "Tell me about the job requirements"
+      ],
+      [
+        "en",
+        "What qualifications are needed for the job?"
+      ],
+      [
+        "en",
+        "What are the skills required for the role?"
+      ],
+      [
+        "en",
+        "How do I meet the qualifications for this job?"
+      ],
+      [
+        "en",
+        "What is the culture of the company?"
+      ],
+      [
+        "en",
+        "Can you tell me about the work environment?"
+      ],
+      [
+        "en",
+        "What values does the company uphold?"
+      ],
+      [
+        "en",
+        "Tell me more about your company culture"
+      ]
+    ]
+  },
+  "nerManager": {
+    "settings": {},
+    "threshold": 0.8,
+    "builtins": [
+      "Number",
+      "Ordinal",
+      "Percentage",
+      "Age",
+      "Currency",
+      "Dimension",
+      "Temperature",
+      "DateTime",
+      "PhoneNumber",
+      "IpAddress",
+      "Boolean",
+      "Email",
+      "Hashtag",
+      "URL"
+    ],
+    "namedEntities": {}
+  },
+  "slotManager": {},
+  "responses": {},
+  "actions": {},
+  "utteranceDict": {
+    "?": "help"
+  }
+}

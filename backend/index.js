@@ -8,6 +8,8 @@ import companyRoute from "./routes/company.route.js";
 import jobRoute from "./routes/job.route.js";
 import applicationRoute from "./routes/application.route.js";
 import bookMark  from "./routes/bookMark.route.js";
+import botRoute from './routes/botRoute.js'
+import blogRoute from './routes/blog.routes.js'
 
 dotenv.config({});
 
@@ -40,6 +42,8 @@ app.use("/api/v1/company", companyRoute);
 app.use("/api/v1/job", jobRoute);
 app.use("/api/v1/application", applicationRoute);
 app.use("/api/v1/bookmark",bookMark);
+app.use("/api/v1",botRoute);
+app.use("/api/v1/blog",blogRoute);
 
 
 

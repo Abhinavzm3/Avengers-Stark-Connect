@@ -108,7 +108,8 @@ const Signup = () => {
             value={input.phoneNumber}
             name="phoneNumber"
             onChange={changeEventHandler}
-            placeholder="8080808080"
+            pattern="^\d{10}$"
+            placeholder="10 digits Mobile No..."
           />
         </div>
         <div className="my-2">

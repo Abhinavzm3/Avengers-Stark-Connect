@@ -18,6 +18,10 @@ import PostJob from "./pages/admin/PostJob";
 import Applicants from "./pages/admin/Applicants";
 import ProtectedRoute from "./pages/admin/ProtectedRoute";
 import Error404 from './pages/Error'
+import  Blogs from "./pages/blog/Blogs";
+import BlogDetail from "./pages/blog/BlogDetail";
+import CreateBlogPost from "./pages/blog/CreateBlog";
+import TrendingBlogs from "./pages/blog/Trendings.blog";
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
@@ -54,6 +58,27 @@ const router = createBrowserRouter([
         path: "/profile",
         element: <Profile />,
       },
+      //blog
+      {
+        path: "/blog",
+        element: <Blogs/>,
+      },
+      {
+        path: "/blogdetail/:id",
+        element: <BlogDetail/>,
+      },
+    
+
+      {
+        path: "blog/trending",
+        element: <TrendingBlogs/>,
+      },
+      {
+        path: "/blog/upload",
+        element: <CreateBlogPost/>,
+      },
+
+     
       {
         path: "*",
         element: <Error404 />,

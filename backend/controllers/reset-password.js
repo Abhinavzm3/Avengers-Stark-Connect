@@ -15,7 +15,7 @@ let user
 
     
     const resetToken = jwt.sign({ userId: user._id }, process.env.SECRET_KEY, {
-      expiresIn: "1h",
+      expiresIn: "5m",
     });
 
     const transporter = nodemailer.createTransport({

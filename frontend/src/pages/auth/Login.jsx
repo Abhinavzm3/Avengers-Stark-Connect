@@ -122,11 +122,14 @@ const Login = () => {
             Login
           </Button>
         )}
-
-        <div className="text-sm">
           Don't have an Account?{" "}
+
+        <div className="text-sm text-center justify-center flex gap-52">
           <Link to="/signup" className="text-blue-500">
             SignUp
+          </Link>{" "}
+          <Link to="/forgot-password" className="text-blue-500">
+          Forgot Password
           </Link>{" "}
         </div>
       </form>

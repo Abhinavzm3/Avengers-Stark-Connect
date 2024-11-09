@@ -134,9 +134,7 @@ const trainBot = async () => {
 };
 
 trainBot().then(() => {
-    console.log("Training completed!");
 }).catch((err) => {
-    console.error("Error training bot: ", err);
 });
 
 export default manager;

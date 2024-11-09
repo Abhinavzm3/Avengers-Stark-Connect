@@ -22,6 +22,8 @@ import  Blogs from "./pages/blog/Blogs";
 import BlogDetail from "./pages/blog/BlogDetail";
 import CreateBlogPost from "./pages/blog/CreateBlog";
 import TrendingBlogs from "./pages/blog/Trendings.blog";
+import Forgot_Password from "./pages/auth/forgot-password";
+import ResetPass from "./pages/auth/resetPassword";
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
@@ -33,6 +35,14 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login />,
+      },
+      {
+        path: "/forgot-password",
+        element: <Forgot_Password />,
+      },
+      {
+        path: "/reset/:token",
+        element: <ResetPass />,
       },
       {
         path: "/Signup",

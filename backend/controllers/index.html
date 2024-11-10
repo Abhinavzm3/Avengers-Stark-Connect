@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socket.IO Chat - Private Messaging</title>
+    <style>
+      /* Basic styling */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      input,
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+      }
+      #chat {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chat">
+      <input
+        id="username"
+        placeholder="Enter your username"
+        autocomplete="off"
+      />
+      <button onclick="setUsername()">Set Username</button>
+
+      <ul id="messages"></ul>
+      <form id="form" action="">
+        <input
+          id="input"
+          autocomplete="off"
+          placeholder="Type your message..."
+        />
+        <input
+          id="recipient"
+          placeholder="Recipient (leave empty for public)"
+        />
+        <button>Send</button>
+      </form>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const socket = io();
+
+      // Function to set username
+      function setUsername() {
+        const username = document.getElementById("username").value;
+        socket.emit("set username", username);
+        document.getElementById("username").disabled = true;
+      }
+
+      // Add message to the list when received
+      socket.on("chat message", function ({ msg, sender, private }) {
+        const item = document.createElement("li");
+
+        // Check if sender is provided
+        if (private) {
+          if (sender) {
+            item.textContent = ` ${sender}: ${msg}`;
+          } else {
+            item.textContent = ` ${msg}`; // No sender, just show the message
+          }
+        } 
+        //for the public
+        // else {
+        //   if (sender) {
+        //     item.textContent = `${sender}: ${msg}`;
+        //   } else {
+        //     item.textContent = `${msg}`; // No sender, just show the message
+        //   }
+        // }
+
+        document.getElementById("messages").appendChild(item);
+        window.scrollTo(0, document.body.scrollHeight); //This line is commonly used in chat applications or live updates to ensure that the most recent message is always visible to the user. 
+      });
+
+      // Send message to server on form submission
+      document.getElementById("form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent the form from reloading the page
+        const input = document.getElementById("input");
+        const recipient = document.getElementById("recipient").value;
+
+        if (input.value) {
+          socket.emit("chat message", { msg: input.value, recipient });
+          input.value = ""; // Clear input field
+        }
+      });
+    </script>
+  </body>
+</html>

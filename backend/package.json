@@ -28,9 +28,11 @@
     "node-nlp": "^3.10.2",
     "node-nlp-rn": "^3.5.2",
     "nodemailer": "^6.9.16",
+    "openai": "^4.71.1",
     "passport": "^0.7.0",
     "passport-github": "^1.1.0",
-    "passport-github2": "^0.1.12"
+    "passport-github2": "^0.1.12",
+    "socket.io": "^4.8.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.7"

@@ -189,3 +189,23 @@ export const updateProfile = async (req, res) => {
     });
   }
 };
+
+
+//get user by id
+
+export const UserbyId=async(req,res)=>{
+
+  const {id}=req.body
+  try {
+
+    const user=await User.findById(id)
+
+    return res.send({
+      user:user,
+    })
+
+    
+  } catch (error) {
+console.log(error)
+  }
+}

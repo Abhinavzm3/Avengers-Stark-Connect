@@ -44,7 +44,6 @@ const Home = () => {
          )}>Signup</p>
           </Button>
 
-
           <Button  className="px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-black rounded-full font-bold transition duration-300" >
          <p onClick={()=>(
           navigate('/login')

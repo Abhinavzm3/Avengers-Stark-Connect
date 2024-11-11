@@ -24,6 +24,7 @@ import CreateBlogPost from "./pages/blog/CreateBlog";
 import TrendingBlogs from "./pages/blog/Trendings.blog";
 import Forgot_Password from "./pages/auth/forgot-password";
 import ResetPass from "./pages/auth/resetPassword";
+import Chat from "./pages/messenger/ChatRecruiter";
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
       {
         path: "/description/:id",
         element: <JobDescription />,
+      },
+      {
+        path: "/chat",
+        element: <Chat />,
       },
       {
         path: "/our-team",
